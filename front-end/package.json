@@ -1,0 +1,14 @@
+{
+  "name": "farm-navigators-frontend",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "http-server -p 8080 -c-1 ."
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  },
+  "dependencies": {
+    "phaser": "^3.80.1"
+  }
+}
