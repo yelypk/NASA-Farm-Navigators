@@ -1,4 +1,7 @@
 from fastapi import FastAPI, Response, Query, HTTPException
+from pathlib import Path
+from fastapi.staticfiles import StaticFiles
+from fastapi.responses import FileResponse
 from typing import Dict
 import numpy as np
 from .models import NewGameIn, PlanIn, TickOut, FarmStateOut
@@ -110,3 +113,17 @@ def farm_raster(save_id: str, season: int = Query(0, ge=0),
         return Response(content=png, media_type="image/png")
     else:
         raise HTTPException(400, "unknown layer")
+
+# Путь к статике (frontend/dist, скопированная в buildCommand)
+STATIC_DIR = Path(__file__).parent / "static"
+if STATIC_DIR.exists():
+    # / -> index.html, /assets/... -> файлы, остальные запросы пойдут в API
+    app.mount("/", StaticFiles(directory=STATIC_DIR, html=True), name="static")
+
+# healthcheck уже есть; на всякий случай ручной индекс:
+@app.get("/index.html")
+def index_html():
+    index_path = STATIC_DIR / "index.html"
+    if index_path.exists():
+        return FileResponse(index_path)
+    return {"detail": "index not built yet"}
