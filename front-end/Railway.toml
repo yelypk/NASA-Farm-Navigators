@@ -1,0 +1,14 @@
+[project]
+name = "nasa-farm-navigators"
+
+[[services]]
+name = "frontend"
+rootDir = "frontend"
+build = "npm ci"
+start = "npm run start"
+
+[[services]]
+name = "backend"
+rootDir = "backend"
+build = "pip install -r requirements.txt"
+start = "uvicorn app.main:app --host 0.0.0.0 --port $PORT"
