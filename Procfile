@@ -1,1 +1,1 @@
-web: bash start.sh
+web: bash -lc 'cd front-end && npm ci && npx http-server -p ${PORT:-3000} -c-1 .'
