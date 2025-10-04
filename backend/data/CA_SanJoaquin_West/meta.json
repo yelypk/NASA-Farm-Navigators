@@ -1,0 +1,33 @@
+{
+  "bbox": {
+    "center_lat": 36.7536,
+    "center_lon": -120.3816,
+    "size_km": 50
+  },
+  "region_grid": {
+    "width": 200,
+    "height": 200,
+    "cell_m": 250,
+    "farm_center_xy": [
+      100,
+      100
+    ]
+  },
+  "farm_grid": {
+    "width": 40,
+    "height": 40,
+    "cell_m": 25,
+    "size_km": [
+      1,
+      1
+    ]
+  },
+  "seasons_per_year": 4,
+  "layers": [
+    "ndvi",
+    "rain",
+    "soil",
+    "temp",
+    "landuse"
+  ]
+}
