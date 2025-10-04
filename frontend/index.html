@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NASA Farm Navigators — Phaser</title>
+    <style>
+      html, body, #app { height: 100%; margin: 0; background:#0b0d0f; color:#e6e6e6; font-family: Inter, system-ui, sans-serif; }
+      #hud { position: fixed; top: 8px; left: 8px; right: 8px; display:flex; gap:12px; align-items:center; }
+      #hud .pill { background:#161a1d; padding:6px 10px; border-radius:12px; border:1px solid #2a2f34; }
+      #legend { position: fixed; bottom: 10px; right: 10px; }
+    </style>
+  </head>
+  <body>
+    <div id="app"></div>
+    <div id="hud">
+      <div class="pill">Layer: <select id="layerSelect">
+        <option value="ndvi">NDVI</option>
+        <option value="rain">Rain (anom)</option>
+        <option value="soil">Soil moisture</option>
+        <option value="temp">Temp (anom)</option>
+        <option value="landuse">Landuse</option>
+      </select></div>
+      <div class="pill">Season: <input type="number" id="seasonInput" value="0" step="1" min="0" style="width:6rem"></div>
+      <div class="pill"><button id="btnLoad">Load Layer</button></div>
+      <div class="pill"><button id="btnTick">Simulate Season (Tick)</button></div>
+      <div class="pill"><button id="btnFarm">Open Farm View</button></div>
+      <div class="pill">API: <input id="apiBase" placeholder="http://localhost:8000" style="width:16rem"></div>
+    </div>
+    <img id="legend" src="/assets/legend_ndvi.png" width="220" />
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
