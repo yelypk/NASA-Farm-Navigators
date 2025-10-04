@@ -1,1 +1,1 @@
-web: bash -lc 'cd front-end && npm install --no-audit --no-fund && npx http-server -p ${PORT:-3000} -c-1 .'
+web: bash -lc 'cd frontend && npm install --no-audit --no-fund && npx http-server -p ${PORT:-3000} -c-1 .'
