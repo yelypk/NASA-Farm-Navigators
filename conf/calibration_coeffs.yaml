@@ -1,0 +1,105 @@
+version: 0.1.0
+updated: '2025-10-05T12:37:11Z'
+description: Calibration coefficients for NASA Farm Navigators (MVP). Values are gameplay
+  defaults and require tuning with real data.
+globals:
+  k_debt_usd_per_mm_per_ha: 0.8
+  k_conv_salt: 1.0
+  k_leach: 0.005
+  soil_porosity_effect: 1.0
+  sal_midpoint: 40
+  k_sal_slope: 0.06
+  d_cover: 1.5
+  d_mulch: 0.8
+  d_manure: 2.5
+  k_rotation: 3.0
+  k_erosion: 1.5
+  k_overleach: 0.8
+  k_fert: 0.15
+  k_w: 0.6
+  k_h: 0.35
+  k_s: 0.5
+  k_p: 0.3
+  k_DD: 0.012
+  k_mono: 0.25
+  k_hum: 0.3
+  k_temp_pest: 0.2
+  insurance_loading: 0.12
+  subsidy_match_ratio: 0.35
+  eco_fine_per_point: 12
+  capex_amort_years: 10
+  event_prob_base: 0.1
+  price_volatility: 0.12
+  forecast_bonus_to_ETc_err: 0.3
+events:
+  NDVI_low_X: 0.35
+  Salinity_high_Y: 60
+  WaterDebt_high_mm: 40
+  Heatwave_DD: 120
+  Rain_anom_sigma: 1.2
+presets:
+  easy:
+    multipliers:
+      penalties: 0.7
+      stresses: 0.85
+      subsidies: 1.4
+      event_prob: 0.7
+      price_volatility: 0.7
+  default:
+    multipliers:
+      penalties: 1.0
+      stresses: 1.0
+      subsidies: 1.0
+      event_prob: 1.0
+      price_volatility: 1.0
+  hard:
+    multipliers:
+      penalties: 1.3
+      stresses: 1.2
+      subsidies: 0.6
+      event_prob: 1.4
+      price_volatility: 1.3
+groups:
+  penalties:
+  - k_debt_usd_per_mm_per_ha
+  - eco_fine_per_point
+  - insurance_loading
+  stresses:
+  - k_w
+  - k_h
+  - k_s
+  - k_p
+  - k_DD
+  - k_mono
+  - k_hum
+  - k_temp_pest
+  subsidies:
+  - subsidy_match_ratio
+  event_prob:
+  - event_prob_base
+  price_volatility:
+  - price_volatility
+regions:
+  CA_SanJoaquin_West:
+    overrides:
+      k_debt_usd_per_mm_per_ha: 1.1
+      k_h: 0.45
+      k_s: 0.45
+      event_prob_base: 0.12
+  UZ_Khorezm_AmuDarya:
+    overrides:
+      k_s: 0.65
+      k_leach: 0.006
+      sal_midpoint: 35
+      eco_fine_per_point: 15
+  NE_Niger_Sahel:
+    overrides:
+      k_w: 0.8
+      k_h: 0.5
+      event_prob_base: 0.14
+    event_overrides:
+      NDVI_low_X: 0.3
+apply_order:
+- globals
+- presets/default
+- regions

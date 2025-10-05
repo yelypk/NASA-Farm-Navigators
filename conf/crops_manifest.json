@@ -1,0 +1,324 @@
+[
+  {
+    "id": "almond",
+    "display_name": "Almond (kernel)",
+    "region": "CA_SanJoaquin_West",
+    "growth_length_seasons": 2,
+    "base_yield_kg_per_ha": 2000,
+    "water_req_mm_total": 900,
+    "salinity_tolerance": 0.3,
+    "heat_tolerance": 0.6,
+    "price_usd_per_ton_baseline": 5000,
+    "ndvi_profile": [
+      0.2,
+      0.75,
+      0.65,
+      0.2
+    ],
+    "soil_effects": {
+      "fertility_delta": 0.0,
+      "residue": 0.2
+    },
+    "pest_pressure_mod": 0.1,
+    "calibration_needed": true
+  },
+  {
+    "id": "pistachio",
+    "display_name": "Pistachio",
+    "region": "CA_SanJoaquin_West",
+    "growth_length_seasons": 2,
+    "base_yield_kg_per_ha": 1500,
+    "water_req_mm_total": 800,
+    "salinity_tolerance": 0.5,
+    "heat_tolerance": 0.7,
+    "price_usd_per_ton_baseline": 6000,
+    "ndvi_profile": [
+      0.2,
+      0.7,
+      0.6,
+      0.2
+    ],
+    "soil_effects": {
+      "fertility_delta": 0.0,
+      "residue": 0.2
+    },
+    "pest_pressure_mod": 0.08,
+    "calibration_needed": true
+  },
+  {
+    "id": "processing_tomato",
+    "display_name": "Processing Tomato",
+    "region": "CA_SanJoaquin_West",
+    "growth_length_seasons": 2,
+    "base_yield_kg_per_ha": 80000,
+    "water_req_mm_total": 600,
+    "salinity_tolerance": 0.3,
+    "heat_tolerance": 0.5,
+    "price_usd_per_ton_baseline": 100,
+    "ndvi_profile": [
+      0.25,
+      0.8,
+      0.7,
+      0.2
+    ],
+    "soil_effects": {
+      "fertility_delta": -0.5,
+      "residue": 0.1
+    },
+    "pest_pressure_mod": 0.15,
+    "calibration_needed": true
+  },
+  {
+    "id": "cotton",
+    "display_name": "Cotton (lint)",
+    "region": "CA_SanJoaquin_West",
+    "growth_length_seasons": 3,
+    "base_yield_kg_per_ha": 1500,
+    "water_req_mm_total": 800,
+    "salinity_tolerance": 0.6,
+    "heat_tolerance": 0.7,
+    "price_usd_per_ton_baseline": 1500,
+    "ndvi_profile": [
+      0.2,
+      0.65,
+      0.75,
+      0.55
+    ],
+    "soil_effects": {
+      "fertility_delta": -1.0,
+      "residue": 0.2
+    },
+    "pest_pressure_mod": 0.2,
+    "calibration_needed": true
+  },
+  {
+    "id": "wine_grape",
+    "display_name": "Wine Grape",
+    "region": "CA_SanJoaquin_West",
+    "growth_length_seasons": 3,
+    "base_yield_kg_per_ha": 10000,
+    "water_req_mm_total": 600,
+    "salinity_tolerance": 0.4,
+    "heat_tolerance": 0.6,
+    "price_usd_per_ton_baseline": 400,
+    "ndvi_profile": [
+      0.2,
+      0.7,
+      0.75,
+      0.45
+    ],
+    "soil_effects": {
+      "fertility_delta": 0.0,
+      "residue": 0.3
+    },
+    "pest_pressure_mod": 0.1,
+    "calibration_needed": true
+  },
+  {
+    "id": "cotton_uz",
+    "display_name": "Cotton (lint)",
+    "region": "UZ_Khorezm_AmuDarya",
+    "growth_length_seasons": 3,
+    "base_yield_kg_per_ha": 1400,
+    "water_req_mm_total": 900,
+    "salinity_tolerance": 0.6,
+    "heat_tolerance": 0.7,
+    "price_usd_per_ton_baseline": 1400,
+    "ndvi_profile": [
+      0.2,
+      0.6,
+      0.7,
+      0.5
+    ],
+    "soil_effects": {
+      "fertility_delta": -1.0,
+      "residue": 0.2
+    },
+    "pest_pressure_mod": 0.2,
+    "calibration_needed": true
+  },
+  {
+    "id": "winter_wheat",
+    "display_name": "Winter Wheat",
+    "region": "UZ_Khorezm_AmuDarya",
+    "growth_length_seasons": 2,
+    "base_yield_kg_per_ha": 4000,
+    "water_req_mm_total": 550,
+    "salinity_tolerance": 0.4,
+    "heat_tolerance": 0.4,
+    "price_usd_per_ton_baseline": 250,
+    "ndvi_profile": [
+      0.55,
+      0.7,
+      0.25,
+      0.2
+    ],
+    "soil_effects": {
+      "fertility_delta": 0.0,
+      "residue": 0.2
+    },
+    "pest_pressure_mod": 0.1,
+    "calibration_needed": true
+  },
+  {
+    "id": "alfalfa",
+    "display_name": "Alfalfa",
+    "region": "UZ_Khorezm_AmuDarya",
+    "growth_length_seasons": 3,
+    "base_yield_kg_per_ha": 10000,
+    "water_req_mm_total": 900,
+    "salinity_tolerance": 0.5,
+    "heat_tolerance": 0.6,
+    "price_usd_per_ton_baseline": 180,
+    "ndvi_profile": [
+      0.4,
+      0.75,
+      0.75,
+      0.5
+    ],
+    "soil_effects": {
+      "fertility_delta": 1.0,
+      "residue": 0.4
+    },
+    "pest_pressure_mod": 0.05,
+    "calibration_needed": true
+  },
+  {
+    "id": "rice_local",
+    "display_name": "Rice (local)",
+    "region": "UZ_Khorezm_AmuDarya",
+    "growth_length_seasons": 3,
+    "base_yield_kg_per_ha": 6000,
+    "water_req_mm_total": 1200,
+    "salinity_tolerance": 0.3,
+    "heat_tolerance": 0.5,
+    "price_usd_per_ton_baseline": 400,
+    "ndvi_profile": [
+      0.25,
+      0.75,
+      0.8,
+      0.45
+    ],
+    "soil_effects": {
+      "fertility_delta": -0.5,
+      "residue": 0.3
+    },
+    "pest_pressure_mod": 0.12,
+    "calibration_needed": true
+  },
+  {
+    "id": "millet_uz",
+    "display_name": "Millet",
+    "region": "UZ_Khorezm_AmuDarya",
+    "growth_length_seasons": 2,
+    "base_yield_kg_per_ha": 2000,
+    "water_req_mm_total": 400,
+    "salinity_tolerance": 0.55,
+    "heat_tolerance": 0.6,
+    "price_usd_per_ton_baseline": 300,
+    "ndvi_profile": [
+      0.3,
+      0.65,
+      0.55,
+      0.25
+    ],
+    "soil_effects": {
+      "fertility_delta": 0.0,
+      "residue": 0.3
+    },
+    "pest_pressure_mod": 0.08,
+    "calibration_needed": true
+  },
+  {
+    "id": "sorghum",
+    "display_name": "Sorghum",
+    "region": "NE_Niger_Sahel",
+    "growth_length_seasons": 2,
+    "base_yield_kg_per_ha": 1200,
+    "water_req_mm_total": 350,
+    "salinity_tolerance": 0.6,
+    "heat_tolerance": 0.7,
+    "price_usd_per_ton_baseline": 250,
+    "ndvi_profile": [
+      0.2,
+      0.6,
+      0.65,
+      0.3
+    ],
+    "soil_effects": {
+      "fertility_delta": 0.0,
+      "residue": 0.3
+    },
+    "pest_pressure_mod": 0.1,
+    "calibration_needed": true
+  },
+  {
+    "id": "pearl_millet",
+    "display_name": "Pearl Millet",
+    "region": "NE_Niger_Sahel",
+    "growth_length_seasons": 2,
+    "base_yield_kg_per_ha": 800,
+    "water_req_mm_total": 300,
+    "salinity_tolerance": 0.7,
+    "heat_tolerance": 0.8,
+    "price_usd_per_ton_baseline": 300,
+    "ndvi_profile": [
+      0.2,
+      0.55,
+      0.6,
+      0.25
+    ],
+    "soil_effects": {
+      "fertility_delta": 0.0,
+      "residue": 0.3
+    },
+    "pest_pressure_mod": 0.08,
+    "calibration_needed": true
+  },
+  {
+    "id": "cowpea",
+    "display_name": "Cowpea",
+    "region": "NE_Niger_Sahel",
+    "growth_length_seasons": 2,
+    "base_yield_kg_per_ha": 600,
+    "water_req_mm_total": 280,
+    "salinity_tolerance": 0.4,
+    "heat_tolerance": 0.6,
+    "price_usd_per_ton_baseline": 600,
+    "ndvi_profile": [
+      0.2,
+      0.55,
+      0.6,
+      0.3
+    ],
+    "soil_effects": {
+      "fertility_delta": 1.5,
+      "residue": 0.2
+    },
+    "pest_pressure_mod": 0.06,
+    "calibration_needed": true
+  },
+  {
+    "id": "groundnut",
+    "display_name": "Groundnut (Peanut)",
+    "region": "NE_Niger_Sahel",
+    "growth_length_seasons": 2,
+    "base_yield_kg_per_ha": 1000,
+    "water_req_mm_total": 350,
+    "salinity_tolerance": 0.3,
+    "heat_tolerance": 0.6,
+    "price_usd_per_ton_baseline": 700,
+    "ndvi_profile": [
+      0.2,
+      0.5,
+      0.6,
+      0.3
+    ],
+    "soil_effects": {
+      "fertility_delta": 0.8,
+      "residue": 0.3
+    },
+    "pest_pressure_mod": 0.1,
+    "calibration_needed": true
+  }
+]
