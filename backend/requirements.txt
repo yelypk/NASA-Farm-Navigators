@@ -1,5 +1,7 @@
-fastapi==0.115.5
-uvicorn[standard]==0.30.6
-numpy==2.1.2
-Pillow==10.4.0
-python-multipart==0.0.9
+fastapi>=0.115
+uvicorn[standard]>=0.30
+pydantic>=2.8
+SQLAlchemy>=2.0
+psycopg[binary]>=3.2
+alembic>=1.13
+python-dotenv>=1.0

@@ -2,6 +2,6 @@
 builder = "NIXPACKS"
 
 [deploy]
-startCommand = "uvicorn app.main:app --host 0.0.0.0 --port ${PORT:-8080}"
+startCommand = "alembic upgrade head && python -m uvicorn backend.app.main:app --host 0.0.0.0 --port ${PORT:-8080}"
 healthcheckPath = "/healthz"
 restartPolicyType = "ON_FAILURE"
