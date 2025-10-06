@@ -1,6 +1,0 @@
-[build]
-builder = "NIXPACKS"
-
-[deploy]
-startCommand = "PYTHONUNBUFFERED=1 LOG_LEVEL=INFO SQLALCHEMY_ECHO=0 sh -c 'echo \"[startup] alembic upgrade head\"; alembic upgrade head && echo \"[startup] running uvicorn\"; uvicorn backend.app.main:app --host 0.0.0.0 --port ${PORT:-8080} --log-level info --access-log'"
-

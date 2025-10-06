@@ -2,10 +2,11 @@
 builder = "NIXPACKS"
 buildCommand = """
 pip install -r backend/requirements.txt
-npm ci --prefix frontend
-npm run build --prefix frontend
-mkdir -p backend/app/static
-cp -r frontend/dist/* backend/app/static/
+if [ -d frontend ]; then
+  bash -lc 'cd frontend && (npm ci || npm install) && npm run build'
+  mkdir -p backend/app/static
+  cp -r frontend/dist/* backend/app/static/
+fi
 """
 
 [deploy]

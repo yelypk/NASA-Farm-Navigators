@@ -7,6 +7,7 @@ from .sim.render import render_raster_png
 from pathlib import Path
 from fastapi.staticfiles import StaticFiles
 from fastapi.responses import FileResponse
+import logging
 
 app = FastAPI(title="Farm Navigators API")
 
@@ -62,31 +63,41 @@ def game_raster(gid: str, layer: str = "ndvi"):
     return Response(content=png, media_type="image/png")
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
-FRONTEND_DIST = REPO_ROOT / "frontend" / "dist"
+# 1) при деплое Railway.toml копирует билд сюда:
+STATIC_DIR = Path(__file__).resolve().parent / "static"
+# 2) на локалке/альтернативном деплое билд может лежать тут:
+DIST_DIR = REPO_ROOT / "frontend" / "dist"
 
-if FRONTEND_DIST.exists():
-    assets_dir = FRONTEND_DIST / "assets"
+FRONTEND_DIR = None
+for p in (STATIC_DIR, DIST_DIR):
+    if p.exists() and (p / "index.html").exists():
+        FRONTEND_DIR = p
+        break
+
+if FRONTEND_DIR:
+    assets_dir = FRONTEND_DIR / "assets"
     if assets_dir.exists():
         app.mount("/assets", StaticFiles(directory=assets_dir), name="assets")
 
     @app.get("/", include_in_schema=False)
     async def index():
-        return FileResponse(FRONTEND_DIST / "index.html")
+        return FileResponse(FRONTEND_DIR / "index.html")
 
     @app.get("/{path_name:path}", include_in_schema=False)
     async def spa_fallback(path_name: str):
-        index_file = FRONTEND_DIST / "index.html"
-        if index_file.exists():
-            return FileResponse(index_file)
-        raise HTTPException(status_code=404, detail="Frontend build missing (no index.html)")
+        # Любой не-API путь возвращает SPA
+        return FileResponse(FRONTEND_DIR / "index.html")
+else:
+    logging.getLogger("app.main").warning(
+        "No frontend build found. Checked: %s and %s", STATIC_DIR, DIST_DIR
+    )
 
-# Debug endpoint
+# Debug: быстро понять, увидел ли сервер билд
 _debug = APIRouter()
 @_debug.get("/__debug_frontend", include_in_schema=False)
 def debug_frontend():
     return {
-        "dist_path": str(FRONTEND_DIST),
-        "exists": FRONTEND_DIST.exists(),
-        "index_html": (FRONTEND_DIST / "index.html").exists()
+        "static_dir": str(STATIC_DIR), "static_index": (STATIC_DIR / "index.html").exists(),
+        "dist_dir": str(DIST_DIR), "dist_index": (DIST_DIR / "index.html").exists()
     }
 app.include_router(_debug)
