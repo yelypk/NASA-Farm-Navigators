@@ -63,14 +63,12 @@ def game_raster(gid: str, layer: str = "ndvi"):
     return Response(content=png, media_type="image/png")
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
-# 1) при деплое Railway.toml копирует билд сюда:
-STATIC_DIR = Path(__file__).resolve().parent / "static"
-# 2) на локалке/альтернативном деплое билд может лежать тут:
-DIST_DIR = REPO_ROOT / "frontend" / "dist"
+STATIC_DIR = Path(__file__).resolve().parent / "static"  
+DIST_DIR   = REPO_ROOT / "frontend" / "dist"               
 
 FRONTEND_DIR = None
 for p in (STATIC_DIR, DIST_DIR):
-    if p.exists() and (p / "index.html").exists():
+    if (p / "index.html").exists():
         FRONTEND_DIR = p
         break
 
@@ -85,19 +83,24 @@ if FRONTEND_DIR:
 
     @app.get("/{path_name:path}", include_in_schema=False)
     async def spa_fallback(path_name: str):
-        # Любой не-API путь возвращает SPA
         return FileResponse(FRONTEND_DIR / "index.html")
 else:
     logging.getLogger("app.main").warning(
         "No frontend build found. Checked: %s and %s", STATIC_DIR, DIST_DIR
     )
 
-# Debug: быстро понять, увидел ли сервер билд
-_debug = APIRouter()
-@_debug.get("/__debug_frontend", include_in_schema=False)
+_dbg = APIRouter()
+@_dbg.get("/healthz", include_in_schema=False)
+def healthz():
+    return {"status": "ok"}
+
+@_dbg.get("/__debug_frontend", include_in_schema=False)
 def debug_frontend():
     return {
-        "static_dir": str(STATIC_DIR), "static_index": (STATIC_DIR / "index.html").exists(),
-        "dist_dir": str(DIST_DIR), "dist_index": (DIST_DIR / "index.html").exists()
+        "static_index": (STATIC_DIR / "index.html").exists(),
+        "dist_index":   (DIST_DIR   / "index.html").exists(),
+        "static_dir": str(STATIC_DIR),
+        "dist_dir":   str(DIST_DIR)
     }
-app.include_router(_debug)
+app.include_router(_dbg)
+# ========= /SPA serving =========

@@ -1,15 +1,4 @@
-# nixpacks.toml (root)
 [phases.setup]
 nixPkgs = ["python312", "nodejs_20"]
 
-[phases.install]
-cmds = ["pip install -r requirements.txt"]
-
-[phases.build]
-cmds = [
-  "bash -lc 'if [ -d frontend ]; then cd frontend && npm ci && npm run build; fi'"
-]
-
-[start]
-cmd = "bash start.sh"
 
