@@ -10,6 +10,7 @@ fi
 """
 
 [deploy]
-startCommand = "bash start.sh"
+# <-- ВАЖНО: запускаем скрипт внутри backend/
+startCommand = "bash backend/start.sh"
 healthcheckPath = "/healthz"
 restartPolicyType = "ON_FAILURE"
