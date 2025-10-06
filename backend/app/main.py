@@ -1,5 +1,5 @@
-from fastapi import FastAPI, HTTPException
-from fastapi.responses import Response, JSONResponse
+from fastapi import FastAPI, HTTPException, APIRouter
+from fastapi.responses import Response, JSONResponse    
 from .storage import store
 from .models import NewGameRequest, PlanRequest
 from .sim.engine import new_game_state, apply_plan_and_tick
@@ -61,36 +61,32 @@ def game_raster(gid: str, layer: str = "ndvi"):
     png = render_raster_png(arr)
     return Response(content=png, media_type="image/png")
 
-APP_DIR = Path(__file__).resolve().parent
-ROOT_DIR = APP_DIR.parent  # корень репо
-FRONTEND_DIST = ROOT_DIR / "frontend" / "dist"
+REPO_ROOT = Path(__file__).resolve().parents[2]
+FRONTEND_DIST = REPO_ROOT / "frontend" / "dist"
 
 if FRONTEND_DIST.exists():
     assets_dir = FRONTEND_DIST / "assets"
     if assets_dir.exists():
-        # Vite кладёт статичные ассеты сюда (с хешами в именах)
         app.mount("/assets", StaticFiles(directory=assets_dir), name="assets")
 
     @app.get("/", include_in_schema=False)
     async def index():
-        """Корневая страница SPA."""
         return FileResponse(FRONTEND_DIST / "index.html")
 
     @app.get("/{path_name:path}", include_in_schema=False)
     async def spa_fallback(path_name: str):
-        """
-        Любой не-API маршрут (например /game, /settings) возвращает index.html.
-        Все API-роуты, объявленные выше, сработают раньше и не попадут сюда.
-        """
         index_file = FRONTEND_DIST / "index.html"
         if index_file.exists():
             return FileResponse(index_file)
-        raise HTTPException(
-            status_code=404,
-            detail="Frontend is not built. Run: npm --prefix frontend ci && npm --prefix frontend run build",
-        )
-else:
-    import logging
-    logging.getLogger("app.main").warning(
-        "frontend/dist not found; '/' will be 404. Build the frontend before deploy."
-    )
+        raise HTTPException(status_code=404, detail="Frontend build missing (no index.html)")
+
+# Debug endpoint
+_debug = APIRouter()
+@_debug.get("/__debug_frontend", include_in_schema=False)
+def debug_frontend():
+    return {
+        "dist_path": str(FRONTEND_DIST),
+        "exists": FRONTEND_DIST.exists(),
+        "index_html": (FRONTEND_DIST / "index.html").exists()
+    }
+app.include_router(_debug)
