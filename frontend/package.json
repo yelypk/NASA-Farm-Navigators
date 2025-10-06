@@ -1,15 +1,15 @@
 {
   "name": "farm-navigators-frontend",
-  "version": "0.1.0",
   "private": true,
+  "version": "0.1.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview --port ${PORT:-5173} --strictPort"
+    "preview": "vite preview --port 5173"
   },
   "dependencies": {
-    "phaser": "^3.80.0"
+    "phaser": "^3.80.1"
   },
   "devDependencies": {
     "vite": "^5.4.8"

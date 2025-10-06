@@ -1,139 +1,120 @@
-from datetime import datetime
-from sqlalchemy import (
-    Integer, String, Float, Boolean, DateTime, ForeignKey, Enum, UniqueConstraint
-)
-from sqlalchemy.orm import DeclarativeBase, Mapped, mapped_column, relationship
-from sqlalchemy.dialects.postgresql import JSONB, ARRAY
+from pydantic import BaseModel, Field
+from typing import List, Dict, Optional, Literal
+import uuid, math
 
-class Base(DeclarativeBase):
-    pass
+Season = Literal["spring","summer","autumn","winter"]
 
-# -------- Маніфести --------
-class ManifestInfrastructure(Base):
-    __tablename__ = "manifests_infrastructure"
-    id: Mapped[int] = mapped_column(Integer, primary_key=True, autoincrement=True)
-    key: Mapped[str] = mapped_column(String(64), unique=True, index=True)  # например "irrigation_drip"
-    json: Mapped[dict] = mapped_column(JSONB)                               # оригинальный объект
-    category: Mapped[str] = mapped_column(String(64))
-    sustainable: Mapped[bool] = mapped_column(Boolean, default=False)
-    regions: Mapped[list[str]] = mapped_column(ARRAY(String(64)))
-    capex_usd_per_ha: Mapped[float | None] = mapped_column(Float, nullable=True)
-    opex_usd_per_ha_per_season: Mapped[float | None] = mapped_column(Float, nullable=True)
-    version: Mapped[str | None] = mapped_column(String(32), nullable=True)
-    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+class PlanCell(BaseModel):
+    crop: Optional[str] = None
+    irrigation: Optional[bool] = None
+    drainage: Optional[bool] = None
 
-class ManifestCrop(Base):
-    __tablename__ = "manifests_crops"
-    id: Mapped[int] = mapped_column(Integer, primary_key=True, autoincrement=True)
-    key: Mapped[str] = mapped_column(String(64), unique=True, index=True)  # например "almond"
-    json: Mapped[dict] = mapped_column(JSONB)
-    region: Mapped[str] = mapped_column(String(64), index=True)
-    base_yield: Mapped[float | None] = mapped_column(Float, nullable=True)
-    water_req: Mapped[float | None] = mapped_column(Float, nullable=True)
-    price_usd_per_ton: Mapped[float | None] = mapped_column(Float, nullable=True)
-    version: Mapped[str | None] = mapped_column(String(32), nullable=True)
-    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+class PlanRequest(BaseModel):
+    cells: Dict[str, PlanCell] = Field(default_factory=dict)
 
-# -------- Регіони і дозволені культури --------
-class Region(Base):
-    __tablename__ = "regions"
-    id: Mapped[int] = mapped_column(Integer, primary_key=True, autoincrement=True)
-    name: Mapped[str] = mapped_column(String(128), unique=True, index=True)
-    bbox_json: Mapped[dict | None] = mapped_column(JSONB, nullable=True)
-    grid_w: Mapped[int] = mapped_column(Integer, default=200)
-    grid_h: Mapped[int] = mapped_column(Integer, default=200)
-    tile_m: Mapped[int] = mapped_column(Integer, default=250)
-    meta_json: Mapped[dict | None] = mapped_column(JSONB, nullable=True)
+class NewGameRequest(BaseModel):
+    region: Literal["california","amu_darya","sahel"]
+    seed: Optional[int] = None
 
-class RegionAllowedCrop(Base):
-    __tablename__ = "region_allowed_crops"
-    region_id: Mapped[int] = mapped_column(ForeignKey("regions.id"), primary_key=True)
-    crop_id: Mapped[int] = mapped_column(ForeignKey("manifests_crops.id"), primary_key=True)
+class CellPlan(BaseModel):
+    crop: str = "fallow"
+    irrigation: bool = False
+    drainage: bool = False
 
-# -------- Ігрова сесія і поля --------
-class Session(Base):
-    __tablename__ = "sessions"
-    id: Mapped[int] = mapped_column(Integer, primary_key=True, autoincrement=True)
-    region_id: Mapped[int] = mapped_column(ForeignKey("regions.id"), index=True)
-    preset: Mapped[str] = mapped_column(String(32), default="default")
-    config_json: Mapped[dict] = mapped_column(JSONB)
-    config_sha: Mapped[str | None] = mapped_column(String(64), nullable=True)
-    manifests_sha: Mapped[str | None] = mapped_column(String(64), nullable=True)
-    started_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
-    finished_at: Mapped[datetime | None] = mapped_column(DateTime, nullable=True)
-    seed_rng: Mapped[int | None] = mapped_column(Integer, nullable=True)
+class Cell(BaseModel):
+    fertility: float = 0.6  # 0..1
+    salinity: float = 0.2   # 0..1 (bad if high)
+    moisture: float = 0.5   # 0..1
+    ndvi: float = 0.25      # 0..1
+    last_crop: str = "fallow"
+    plan: CellPlan = Field(default_factory=CellPlan)
 
-class Field(Base):
-    __tablename__ = "fields"
-    id: Mapped[int] = mapped_column(Integer, primary_key=True, autoincrement=True)
-    session_id: Mapped[int] = mapped_column(ForeignKey("sessions.id"), index=True)
-    x: Mapped[int] = mapped_column(Integer)  # клетка 0..(W-1)
-    y: Mapped[int] = mapped_column(Integer)  # клетка 0..(H-1)
-    state: Mapped[dict | None] = mapped_column(JSONB, nullable=True)  # произвольные отметки
-    fertility: Mapped[float] = mapped_column(Float, default=50.0)
-    salinity: Mapped[float] = mapped_column(Float, default=10.0)
-    moisture: Mapped[float] = mapped_column(Float, default=50.0)
-    ndvi: Mapped[float] = mapped_column(Float, default=0.2)
-    protection: Mapped[int] = mapped_column(Integer, default=0)
-    __table_args__ = (UniqueConstraint("session_id", "x", "y", name="uq_field_cell"),)
+class Farm(BaseModel):
+    size: int = 32  # 32x32 = 1km @ ~31m cell
+    cells: List[Cell] = Field(default_factory=list)
 
-# -------- Розміщення інфраструктури та посадки --------
-class InfraPlacement(Base):
-    __tablename__ = "infra_placements"
-    id: Mapped[int] = mapped_column(Integer, primary_key=True, autoincrement=True)
-    session_id: Mapped[int] = mapped_column(ForeignKey("sessions.id"), index=True)
-    infra_id: Mapped[int] = mapped_column(ForeignKey("manifests_infrastructure.id"))
-    area_mode: Mapped[str] = mapped_column(String(32))  # per_field | per_sector | farm_wide
-    tiles: Mapped[list[int] | None] = mapped_column(ARRAY(Integer), nullable=True)  # список индексов клеток
-    payload: Mapped[dict | None] = mapped_column(JSONB, nullable=True)
-    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    def __init__(self, **data):
+        super().__init__(**data)
+        if not self.cells:
+            self.cells = [Cell() for _ in range(self.size*self.size)]
 
-class Planting(Base):
-    __tablename__ = "plantings"
-    id: Mapped[int] = mapped_column(Integer, primary_key=True, autoincrement=True)
-    session_id: Mapped[int] = mapped_column(ForeignKey("sessions.id"), index=True)
-    crop_id: Mapped[int] = mapped_column(ForeignKey("manifests_crops.id"))
-    field_id: Mapped[int] = mapped_column(ForeignKey("fields.id"))
-    season_start: Mapped[int] = mapped_column(Integer)   # 0..(years*4-1)
-    status: Mapped[str] = mapped_column(String(32), default="growing")  # growing/harvested/failed
+    def rasters(self, layer: str):
+        import numpy as np
+        n = self.size
+        arr = np.zeros((n, n), dtype="float32")
+        for i, c in enumerate(self.cells):
+            y = i // n; x = i % n
+            if layer == "ndvi":
+                arr[y,x] = c.ndvi
+            elif layer == "moisture":
+                arr[y,x] = c.moisture
+            elif layer == "salinity":
+                arr[y,x] = c.salinity
+            elif layer == "fertility":
+                arr[y,x] = c.fertility
+            else:
+                arr[y,x] = 0.0
+        return arr.clip(0.0, 1.0)
 
-# -------- Скот --------
-class Livestock(Base):
-    __tablename__ = "livestock"
-    id: Mapped[int] = mapped_column(Integer, primary_key=True, autoincrement=True)
-    session_id: Mapped[int] = mapped_column(ForeignKey("sessions.id"), index=True)
-    kind: Mapped[str] = mapped_column(String(32))    # small_ruminant / cattle / pack
-    headcount: Mapped[int] = mapped_column(Integer, default=0)
-    paddock_tiles: Mapped[list[int] | None] = mapped_column(ARRAY(Integer), nullable=True)
-    params: Mapped[dict | None] = mapped_column(JSONB, nullable=True)
+class Finance(BaseModel):
+    cash: float = 10000.0
+    loan: float = 0.0
+    score_economy: float = 0.0
+    score_sustain: float = 0.0
+    score_risk: float = 0.0
+    score_efficiency: float = 0.0
 
-# -------- Фінанси, події, телеметрія --------
-FinanceKind = Enum("loan", "subsidy", "insurance", "payment", "penalty", name="fin_kind")
-EventKind = Enum("historical", "procedural", name="event_kind")
+class Climate(BaseModel):
+    # Simplified seasonal drivers per region
+    seasonal_rain: Dict[Season, float]
+    seasonal_temp: Dict[Season, float]
+    # shocks loaded from events
+    shock_rain: float = 1.0
+    shock_temp: float = 1.0
 
-class Finance(Base):
-    __tablename__ = "finances"
-    id: Mapped[int] = mapped_column(Integer, primary_key=True, autoincrement=True)
-    session_id: Mapped[int] = mapped_column(ForeignKey("sessions.id"), index=True)
-    kind: Mapped[str] = mapped_column(FinanceKind)
-    amount: Mapped[float] = mapped_column(Float)
-    season: Mapped[int] = mapped_column(Integer)
-    note: Mapped[str | None] = mapped_column(String(256), nullable=True)
+class Region(BaseModel):
+    code: str
+    display_name: str
+    climate: Climate
 
-class Event(Base):
-    __tablename__ = "events"
-    id: Mapped[int] = mapped_column(Integer, primary_key=True, autoincrement=True)
-    session_id: Mapped[int] = mapped_column(ForeignKey("sessions.id"), index=True)
-    kind: Mapped[str] = mapped_column(EventKind)
-    code: Mapped[str] = mapped_column(String(64))
-    payload: Mapped[dict | None] = mapped_column(JSONB, nullable=True)
-    season: Mapped[int] = mapped_column(Integer)
-    resolved: Mapped[bool] = mapped_column(Boolean, default=False)
-    choice: Mapped[str | None] = mapped_column(String(32), nullable=True)
+class GameState(BaseModel):
+    id: str
+    region: Region
+    farm: Farm
+    finance: Finance = Field(default_factory=Finance)
+    year: int = 2014
+    season: Season = "spring"
+    turn: int = 0  # total seasons played
 
-class Telemetry(Base):
-    __tablename__ = "telemetry"
-    id: Mapped[int] = mapped_column(Integer, primary_key=True, autoincrement=True)
-    session_id: Mapped[int] = mapped_column(ForeignKey("sessions.id"), index=True)
-    season: Mapped[int] = mapped_column(Integer, index=True)
-    kpi: Mapped[dict] = mapped_column(JSONB)  # {water_debt:..., fertility:..., salinity:...}
+    def public(self):
+        return {
+            "id": self.id,
+            "year": self.year,
+            "season": self.season,
+            "turn": self.turn,
+            "region": self.region.dict(),
+            "finance": self.finance.dict(),
+            "kpis": {
+                "avg_ndvi": self.avg_ndvi(),
+                "avg_moisture": self.avg_moisture(),
+                "avg_salinity": self.avg_salinity(),
+                "avg_fertility": self.avg_fertility(),
+            }
+        }
+
+    def advance_season(self):
+        order = ["spring","summer","autumn","winter"]
+        i = order.index(self.season)
+        nxt = order[(i+1)%4]
+        self.season = nxt
+        if nxt == "spring":
+            self.year += 1
+
+    def avg_ndvi(self): 
+        return sum(c.ndvi for c in self.farm.cells)/len(self.farm.cells)
+    def avg_moisture(self): 
+        return sum(c.moisture for c in self.farm.cells)/len(self.farm.cells)
+    def avg_salinity(self): 
+        return sum(c.salinity for c in self.farm.cells)/len(self.farm.cells)
+    def avg_fertility(self): 
+        return sum(c.fertility for c in self.farm.cells)/len(self.farm.cells)

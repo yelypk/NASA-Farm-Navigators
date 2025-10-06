@@ -1,2 +1,5 @@
 import { defineConfig } from 'vite'
-export default defineConfig({server:{host:true,port:5173},build:{outDir:'dist'}})
+export default defineConfig({
+  server: { port: 5173, host: true },
+  preview: { port: 5173, host: true }
+})
