@@ -1,6 +1,7 @@
 from fastapi import FastAPI, HTTPException, APIRouter
-from fastapi.responses import Response, JSONResponse, FileResponse
+from fastapi.responses import Response
 from fastapi.staticfiles import StaticFiles
+from fastapi.middleware.cors import CORSMiddleware
 from pathlib import Path
 import logging
 
@@ -10,7 +11,7 @@ from .models import NewGameRequest, PlanRequest
 from .sim.engine import new_game_state, apply_plan_and_tick
 from .sim.render import render_raster_png
 
-# ====== EO (satellite layers) imports — optional fallback if package not added yet ======
+# ====== EO (satellite layers) optional import (даём внятную 503, если пакета ещё нет) ======
 _EO_AVAILABLE = True
 _EO_IMPORT_ERROR_TEXT = ""
 try:
@@ -21,7 +22,42 @@ except Exception as _e:
     _EO_AVAILABLE = False
     _EO_IMPORT_ERROR_TEXT = f"{type(_e).__name__}: {_e}"
 
+# --------------------------------------------------------------------------------------
+# App
+# --------------------------------------------------------------------------------------
 app = FastAPI(title="Farm Navigators API")
+
+# CORS — фронт может жить на другом домене Railway/локально
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # при желании сузить до своих доменов
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
+# --------------------------------------------------------------------------------------
+# Paths for Railway (Root Directory = backend/)
+#   __file__ = backend/app/main.py
+#   BASE_DIR  = backend/
+#   APP_DIR   = backend/app/
+#   DATA_ROOT = backend/data/
+#   STATIC_DIR (SPA) = backend/app/static/  (сюда копируем frontend/dist/*)
+# --------------------------------------------------------------------------------------
+BASE_DIR = Path(__file__).resolve().parents[1]
+APP_DIR = BASE_DIR / "app"
+DATA_ROOT = BASE_DIR / "data"
+
+STATIC_DIR = APP_DIR / "static"  # прод-артефакты фронта
+FRONTEND_DIR = STATIC_DIR if (STATIC_DIR / "index.html").exists() else None
+
+if FRONTEND_DIR:
+    app.mount("/", StaticFiles(directory=FRONTEND_DIR, html=True), name="spa")
+else:
+    logging.getLogger("app.main").warning(
+        "Frontend build not found at %s. Build Vite app and copy frontend/dist/* to backend/app/static/",
+        STATIC_DIR,
+    )
 
 # --------------------------------------------------------------------------------------
 # Health
@@ -82,16 +118,13 @@ def game_raster(gid: str, layer: str = "ndvi"):
     return Response(content=png, media_type="image/png")
 
 # --------------------------------------------------------------------------------------
-# EO layers API (frontend consumes grayscale PNG + colors on client)
+# EO layers API (frontend takes grayscale PNG and applies LUT client-side)
 # --------------------------------------------------------------------------------------
-REPO_ROOT = Path(__file__).resolve().parents[2]
-DATA_ROOT = (REPO_ROOT / "backend" / "data").resolve()
-
 def _region_store(region_id: str) -> "RegionStore":
     if not _EO_AVAILABLE:
         raise HTTPException(
             503,
-            detail=f"EO stack not yet installed in backend (.eo/*). Import error: {_EO_IMPORT_ERROR_TEXT}"
+            detail=f"EO stack not yet installed (.eo/*). Import error: {_EO_IMPORT_ERROR_TEXT}",
         )
     root = DATA_ROOT / region_id
     if not root.exists():
@@ -108,7 +141,7 @@ def get_region_layer(region_id: str, layer: str, season: int):
     if not _EO_AVAILABLE:
         raise HTTPException(
             503,
-            detail=f"EO stack not yet installed in backend (.eo/*). Import error: {_EO_IMPORT_ERROR_TEXT}"
+            detail=f"EO stack not yet installed (.eo/*). Import error: {_EO_IMPORT_ERROR_TEXT}",
         )
     if layer not in SCALES:
         raise HTTPException(400, f"Unknown layer '{layer}'. Expected one of: {', '.join(SCALES.keys())}")
@@ -124,12 +157,12 @@ def get_region_layer(region_id: str, layer: str, season: int):
 def get_timeseries(region_id: str, layer: str, x: int, y: int):
     """
     Return per-cell seasonal time-series at grid coords (x,y).
-    Shape assumptions follow GridMeta (default 200x200, 4 seasons * 20 years).
+    Follows GridMeta defaults (200x200, seasons=4*years).
     """
     if not _EO_AVAILABLE:
         raise HTTPException(
             503,
-            detail=f"EO stack not yet installed in backend (.eo/*). Import error: {_EO_IMPORT_ERROR_TEXT}"
+            detail=f"EO stack not yet installed (.eo/*). Import error: {_EO_IMPORT_ERROR_TEXT}",
         )
     if layer not in SCALES:
         raise HTTPException(400, f"Unknown layer '{layer}'. Expected one of: {', '.join(SCALES.keys())}")
@@ -147,22 +180,7 @@ def get_timeseries(region_id: str, layer: str, x: int, y: int):
     return {"region": region_id, "layer": layer, "x": x, "y": y, "values": values}
 
 # --------------------------------------------------------------------------------------
-# SPA / static
-# --------------------------------------------------------------------------------------
-STATIC_DIR = Path(__file__).resolve().parent / "static"   # prod: copy frontend build here
-DIST_DIR   = REPO_ROOT / "frontend" / "dist"              # local: vite build output
-FRONTEND_DIR = next((p for p in (STATIC_DIR, DIST_DIR) if (p / "index.html").exists()), None)
-
-if FRONTEND_DIR:
-    # ВАЖНО: монтируем весь dist на корень -> файлы типа /legend_ndvi.png и /assets/* отдаются корректно
-    app.mount("/", StaticFiles(directory=FRONTEND_DIR, html=True), name="spa")
-else:
-    logging.getLogger("app.main").warning(
-        "No frontend build found at %s or %s", STATIC_DIR, DIST_DIR
-    )
-
-# --------------------------------------------------------------------------------------
-# Debug endpoints (no route path collisions)
+# Debug
 # --------------------------------------------------------------------------------------
 _dbg = APIRouter()
 
@@ -170,18 +188,11 @@ _dbg = APIRouter()
 def dbg_frontend():
     return {
         "static_index": (STATIC_DIR / "index.html").exists(),
-        "dist_index":   (DIST_DIR / "index.html").exists(),
         "static_dir": str(STATIC_DIR),
-        "dist_dir":   str(DIST_DIR)
-    }
-
-@_dbg.get("/__debug/eo_status", include_in_schema=False)
-def dbg_eo_status():
-    return {
-        "eo_available": _EO_AVAILABLE,
         "data_root": str(DATA_ROOT),
-        "import_error": _EO_IMPORT_ERROR_TEXT or None
+        "eo_available": _EO_AVAILABLE,
+        "eo_import_error": _EO_IMPORT_ERROR_TEXT or None,
     }
 
 app.include_router(_dbg)
-# ========= /SPA serving =========
+
