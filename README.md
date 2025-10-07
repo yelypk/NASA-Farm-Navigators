@@ -1,51 +1,194 @@
-# NASA Farm Navigators (MVP)
+# NASA-Farm-Navigators
 
-**An educational, single-player web strategy game that helps farmers and students explore how satellite data and on-farm choices shape long-term resilience.**
-
-## TL;DR
-Manage a 20-year farm campaign across contrasting regions (California’s San Joaquin, Khorezm/Amu Darya, Sahel). Each season you **Plan → Execute → Monitor → Adapt**, balancing short-term profits against long-term soil, water, and ecological health.
+A small **FastAPI (Python 3.12)** backend + **Phaser / Vite (Node 20)** frontend.  
+In production the backend serves the compiled SPA from `backend/app/static/` (or directly from `frontend/dist` when running locally).
 
 ---
 
-## Key Features
+## Project layout
 
-### Core Gameplay Loop
-1. **Plan** seasonal crops/pastures, select tools (irrigation, drainage, soil protection), and set a financial plan (credit/insurance/subsidies).
-2. **Execute** field operations and build/maintain infrastructure.
-3. **Monitor** with maps and indicators (precipitation, soil moisture, NDVI, temperature, dust).
-4. **Adapt** by rebalancing budget, switching tools, and adjusting rotations.
+```
+backend/                  # Server (FastAPI, SQLAlchemy)
+  app/
+    main.py               # FastAPI entrypoint + SPA serving
+    static/               # Production-ready SPA build lives here
+  requirements.txt
+frontend/                 # Client (Vite + Phaser)
+  public/                 # Static files copied to the root of dist
+  src/                    # JS sources
+  package.json
+```
 
-### Entities
-- **Field tiles** (e.g., 25×25 m aggregates) with states: Crop / Fallow / Cover crop / Pasture / Infrastructure.
-- **Crops** (region-specific sets) with water demand, salinity/heat tolerance, growth length, and soil effects.
-- **Livestock** (optional by region) with rotational grazing that can increase fertility but risks overgrazing.
-- **Infrastructure**: irrigation, drainage, soil protection, water storage/harvesting, monitoring devices.
-- **Policies & Finance**: credit lines, weather/crop insurance, targeted subsidies, eco-fines for degradation.
+Key endpoints (when the server is running):
 
-### Region “Scenario Packs” (contrast by design)
-- **California - San Joaquin (water-limited, orchards):** sustainable tools (drip + sensors, reservoirs, cover crops) vs. quick/risky (furrow flooding, aggressive groundwater pumping, no covers).
-- **Uzbekistan - Khorezm/Amu Darya (salinity/waterlogging):** sustainable (subsurface drainage + leaching, gypsum on sodic soils, canal modernization) vs. quick/risky (“just add more water”, cotton monoculture, remove windbreaks).
-- **Niger - Sahel (rainfed, erosion/dust):** sustainable (FMNR, zai pits, stone/earth bunds, agroforestry; compost/manure) vs. quick/risky (bare tillage, sowing without water capture, only mineral NPK).
-
-### Indicators & Models (simplified for games)
-- **Water balance** and **Water Debt** (quotas/allocations vs. use).
-- **Soil salinity** dynamics (irrigation EC, leaching, drainage).
-- **Soil fertility** trajectory (cover crops, mulch, manure, erosion, rotation).
-- **NDVI & stress** from water/heat/salinity/pests.
-- **Events**: historical (region-specific) and procedural triggers (e.g., low NDVI, high salinity, heatwaves, rain anomalies).
-
-### Telemetry & NASA data
-Back end connects to **GPM** (precipitation), **SMAP** (soil moisture), **HLS/NDVI**, and optionally **VIIRS** (night lights/activity).
-
-### Difficulty & Tuning
-Balanced around meaningful trade-offs: “sustainable long-term” vs. “fast/cheap now.” Presets (Easy/Default/Hard) adjust penalties, risk weights, subsidies, event probabilities, and price volatility.
+- `/` – serves the SPA
+- `/__debug_frontend` – quick JSON check that the server sees a built SPA
+- `/healthz` – health check
+- `/docs` – Swagger UI (if not shadowed by SPA routing)
 
 ---
 
-## Score (MVP)
-The final score blends economy and sustainability:
-```text
-Score = 0.40 * Economic Outcome
-      + 0.40 * Eco Sustainability   # fertility↑, salinity↓, water debt↓, NDVI vs baseline↑
-      + 0.15 * Risk Management      # insurance, buffers, diversification
-      + 0.05 * Resource Efficiency  # water productivity, energy efficiency
+## Prerequisites
+
+- **Python 3.12**
+- **Node.js 20+** and **npm**
+- (Optional) PostgreSQL, or use SQLite for local prototyping
+
+---
+
+## Quick start (local)
+
+1) **Clone & enter**
+```bash
+git clone <repo-url>
+cd <repo-folder>
+```
+
+2) **Python deps**
+```bash
+python -m venv .venv
+# Windows
+. .venv/Scripts/activate
+# macOS/Linux
+source .venv/bin/activate
+
+pip install -r backend/requirements.txt
+```
+
+3) **Build the frontend**
+```bash
+cd frontend
+npm install          # or: npm ci (if package-lock.json exists)
+npm run build        # creates frontend/dist
+cd ..
+```
+
+> The server can serve the SPA from **either** `backend/app/static` **or** `frontend/dist`.  
+> To mirror production (recommended), copy the build once:
+> ```bash
+> mkdir -p backend/app/static
+> cp -r frontend/dist/* backend/app/static/
+> ```
+
+4) **Run the server**
+```bash
+# from repo root
+python -m uvicorn backend.app.main:app --reload --port 8080
+```
+
+Open:
+- http://localhost:8080/ → SPA
+- http://localhost:8080/__debug_frontend → should show `static_index: true` or `dist_index: true`
+- http://localhost:8080/healthz
+- http://localhost:8080/docs
+
+---
+
+## Configuration (database)
+
+The app expects a database URL (PostgreSQL recommended). Examples:
+
+- **PostgreSQL (psycopg3)**
+  ```
+  DATABASE_URL=postgresql+psycopg://user:password@host:5432/dbname
+  ```
+- **SQLite (local dev)**
+  ```
+  DATABASE_URL=sqlite:///./local.db
+  ```
+
+Backend drivers (ensure one of these is in `backend/requirements.txt`):
+```
+psycopg[binary]>=3.1      # modern option
+# or
+psycopg2-binary>=2.9
+```
+
+Also make sure `uvicorn` is installed:
+```
+fastapi>=0.112
+uvicorn[standard]>=0.30
+```
+
+---
+
+## Deploying on Railway (two proven setups)
+
+### A) Root Directory = `backend/`  *(simplest to reason about)*
+- **Start Command**
+  ```
+  python -m uvicorn app.main:app --host 0.0.0.0 --port ${PORT:-8080}
+  ```
+- **How the SPA is served**
+  - Commit a built SPA to `backend/app/static` (see “Quick start” step 3 + copy).
+  - Or add a Railway build step that builds `frontend/` and copies to `backend/app/static/`.
+
+### B) Root Directory = repository root  *(autobuild frontend on deploy)*
+Add two files at repo root:
+
+**`nixpacks.toml`**
+```toml
+[phases.setup]
+nixPkgs = ["python312", "nodejs_20"]
+```
+
+**`Railway.toml`**
+```toml
+[build]
+builder = "NIXPACKS"
+buildCommand = """
+set -eux
+pip install -r backend/requirements.txt
+if [ -d frontend ]; then
+  ( cd frontend && (npm ci || npm install) && npm run build )
+  mkdir -p backend/app/static
+  cp -r frontend/dist/* backend/app/static/
+fi
+"""
+
+[deploy]
+startCommand = "python -m uvicorn backend.app.main:app --host 0.0.0.0 --port ${PORT:-8080}"
+healthcheckPath = "/healthz"
+restartPolicyType = "ON_FAILURE"
+```
+
+> If you keep Railway’s **Custom Start Command** in the UI, it overrides the files above.  
+> For repo-root deployments, use the start command shown in the `Railway.toml`.  
+> For `backend/` root deployments, use `python -m uvicorn app.main:app ...`.
+
+---
+
+## Common pitfalls
+
+- **`{"detail":"Not Found"}` at `/`**  
+  No built SPA is available. Build the frontend (Vite), then either:
+  - Copy `frontend/dist/*` to `backend/app/static/`, or
+  - Use the repo-root Railway setup to build & copy during deploy.
+
+- **`No module named uvicorn`**  
+  Add `uvicorn[standard]` to `backend/requirements.txt` and redeploy.
+
+- **Assets like `/legend_ndvi.png` return 404/422**  
+  Put static files in `frontend/public/` so Vite copies them to the root of `dist`.  
+  The backend mounts the entire build at `/` via `StaticFiles(..., html=True)`.
+
+- **Railway starts with `bash backend/start.sh` but crashes**  
+  If **Root Directory = `backend/`**, don’t prefix the path; start with:
+  ```
+  python -m uvicorn app.main:app --host 0.0.0.0 --port ${PORT:-8080}
+  ```
+  Or clear the UI start command and rely on `Railway.toml`.
+
+---
+
+## License
+
+TBD. (Add a license file when ready.)
+
+---
+
+If you want a one-liner to rebuild + copy the SPA locally before committing:
+
+```bash
+(cd frontend && npm install && npm run build)  && mkdir -p backend/app/static  && rm -rf backend/app/static/*  && cp -r frontend/dist/* backend/app/static/
+```
