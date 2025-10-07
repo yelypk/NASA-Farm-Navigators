@@ -1,7 +1,7 @@
 [build]
 builder = "NIXPACKS"
 buildCommand = """
-pip install -r backend/requirements.txt
+if [ -f backend/requirements.txt ]; then pip install -r backend/requirements.txt; elif [ -f requirements.txt ]; then pip install -r requirements.txt; fi
 if [ -d frontend ]; then
   bash -lc 'cd frontend && (npm ci || npm install) && npm run build'
   mkdir -p backend/app/static
@@ -10,7 +10,6 @@ fi
 """
 
 [deploy]
-# <-- ВАЖНО: запускаем скрипт внутри backend/
 startCommand = "bash backend/start.sh"
 healthcheckPath = "/healthz"
 restartPolicyType = "ON_FAILURE"

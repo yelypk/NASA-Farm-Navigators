@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Farm Navigators</title>
+    <style>
+      body,html{margin:0;padding:0;background:#fff;font-family:system-ui}
+      #hud{position:fixed;top:8px;left:8px;background:#ffffffcc;padding:8px 10px;border:1px solid #ddd;border-radius:8px}
+      #hud button{margin-right:6px}
+      #legend{position:fixed;bottom:10px;left:10px;background:#fff;padding:6px;border:1px solid #ddd;border-radius:6px}
+      canvas{image-rendering: pixelated; image-rendering: crisp-edges;}
+    </style>
+    <script type="module" crossorigin src="/assets/index-BogWD8Ma.js"></script>
+  </head>
+  <body>
+    <div id="hud">
+      <select id="region">
+        <option value="california">California</option>
+        <option value="amu_darya">Amu Darya</option>
+        <option value="sahel">Sahel</option>
+      </select>
+      <button id="new">New Game</button>
+      <button id="tick">Tick Season</button>
+      <span id="info"></span>
+      <br/>
+      <small>Left click: cycle crop • Right click: toggle irrigation • Shift+Right: toggle drainage</small>
+    </div>
+    <img id="legend" src="/legend_ndvi.png" />
+    <div id="app"></div>
+  </body>
+</html>

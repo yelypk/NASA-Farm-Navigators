@@ -63,44 +63,34 @@ def game_raster(gid: str, layer: str = "ndvi"):
     return Response(content=png, media_type="image/png")
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
-STATIC_DIR = Path(__file__).resolve().parent / "static"  
-DIST_DIR   = REPO_ROOT / "frontend" / "dist"               
+STATIC_DIR = Path(__file__).resolve().parent / "static"
+DIST_DIR   = REPO_ROOT / "frontend" / "dist"
 
-FRONTEND_DIR = None
-for p in (STATIC_DIR, DIST_DIR):
-    if (p / "index.html").exists():
-        FRONTEND_DIR = p
-        break
+FRONTEND_DIR = next((p for p in (STATIC_DIR, DIST_DIR) if (p / "index.html").exists()), None)
 
 if FRONTEND_DIR:
-    assets_dir = FRONTEND_DIR / "assets"
-    if assets_dir.exists():
-        app.mount("/assets", StaticFiles(directory=assets_dir), name="assets")
+    if (FRONTEND_DIR / "assets").exists():
+        app.mount("/assets", StaticFiles(directory=FRONTEND_DIR / "assets"), name="assets")
 
     @app.get("/", include_in_schema=False)
     async def index():
         return FileResponse(FRONTEND_DIR / "index.html")
 
-    @app.get("/{path_name:path}", include_in_schema=False)
-    async def spa_fallback(path_name: str):
+    @app.get("/{path:path}", include_in_schema=False)
+    async def spa(_path: str):
         return FileResponse(FRONTEND_DIR / "index.html")
 else:
-    logging.getLogger("app.main").warning(
-        "No frontend build found. Checked: %s and %s", STATIC_DIR, DIST_DIR
-    )
+    logging.getLogger("app.main").warning("No frontend build found at %s or %s", STATIC_DIR, DIST_DIR)
 
 _dbg = APIRouter()
 @_dbg.get("/healthz", include_in_schema=False)
-def healthz():
-    return {"status": "ok"}
-
+def healthz(): return {"status": "ok"}
 @_dbg.get("/__debug_frontend", include_in_schema=False)
-def debug_frontend():
+def dbg():
     return {
         "static_index": (STATIC_DIR / "index.html").exists(),
-        "dist_index":   (DIST_DIR   / "index.html").exists(),
+        "dist_index":   (DIST_DIR / "index.html").exists(),
         "static_dir": str(STATIC_DIR),
         "dist_dir":   str(DIST_DIR)
     }
 app.include_router(_dbg)
-# ========= /SPA serving =========
