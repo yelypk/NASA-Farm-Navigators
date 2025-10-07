@@ -1,15 +1,23 @@
 [build]
 builder = "NIXPACKS"
 buildCommand = """
+set -eux
+# 1) Python deps
 if [ -f backend/requirements.txt ]; then pip install -r backend/requirements.txt; elif [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+python -V
+# 2) Frontend build (ok even w/o package-lock.json)
 if [ -d frontend ]; then
-  bash -lc 'cd frontend && (npm ci || npm install) && npm run build'
+  ( cd frontend && (npm ci || npm install) && npm run build )
   mkdir -p backend/app/static
   cp -r frontend/dist/* backend/app/static/
+  echo '[build] Copied frontend/dist -> backend/app/static'
+  ls -la backend/app/static || true
 fi
 """
 
 [deploy]
-startCommand = "bash backend/start.sh"
+# Запускаем сервер напрямую, без start.sh
+startCommand = "python -m uvicorn backend.app.main:app --host 0.0.0.0 --port ${PORT:-8080}"
 healthcheckPath = "/healthz"
 restartPolicyType = "ON_FAILURE"
+
