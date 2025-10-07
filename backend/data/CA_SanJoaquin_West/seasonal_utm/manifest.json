@@ -1,0 +1,2767 @@
+{
+  "entries": [
+    {
+      "dataset": "smap",
+      "year": 2015,
+      "season_token": "S2",
+      "season": "MAM",
+      "res_m": 250,
+      "unit": "m3m3",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\smap\\res_250m\\2015_S2.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\smap\\res_250m\\2015_S2_250m_m3m3.tif"
+    },
+    {
+      "dataset": "smap",
+      "year": 2015,
+      "season_token": "S3",
+      "season": "JJA",
+      "res_m": 250,
+      "unit": "m3m3",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\smap\\res_250m\\2015_S3.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\smap\\res_250m\\2015_S3_250m_m3m3.tif"
+    },
+    {
+      "dataset": "smap",
+      "year": 2015,
+      "season_token": "S4",
+      "season": "SON",
+      "res_m": 250,
+      "unit": "m3m3",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\smap\\res_250m\\2015_S4.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\smap\\res_250m\\2015_S4_250m_m3m3.tif"
+    },
+    {
+      "dataset": "smap",
+      "year": 2016,
+      "season_token": "S1",
+      "season": "DJF",
+      "res_m": 250,
+      "unit": "m3m3",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\smap\\res_250m\\2016_S1.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\smap\\res_250m\\2016_S1_250m_m3m3.tif"
+    },
+    {
+      "dataset": "smap",
+      "year": 2016,
+      "season_token": "S2",
+      "season": "MAM",
+      "res_m": 250,
+      "unit": "m3m3",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\smap\\res_250m\\2016_S2.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\smap\\res_250m\\2016_S2_250m_m3m3.tif"
+    },
+    {
+      "dataset": "smap",
+      "year": 2016,
+      "season_token": "S3",
+      "season": "JJA",
+      "res_m": 250,
+      "unit": "m3m3",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\smap\\res_250m\\2016_S3.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\smap\\res_250m\\2016_S3_250m_m3m3.tif"
+    },
+    {
+      "dataset": "smap",
+      "year": 2016,
+      "season_token": "S4",
+      "season": "SON",
+      "res_m": 250,
+      "unit": "m3m3",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\smap\\res_250m\\2016_S4.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\smap\\res_250m\\2016_S4_250m_m3m3.tif"
+    },
+    {
+      "dataset": "smap",
+      "year": 2017,
+      "season_token": "S1",
+      "season": "DJF",
+      "res_m": 250,
+      "unit": "m3m3",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\smap\\res_250m\\2017_S1.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\smap\\res_250m\\2017_S1_250m_m3m3.tif"
+    },
+    {
+      "dataset": "smap",
+      "year": 2017,
+      "season_token": "S2",
+      "season": "MAM",
+      "res_m": 250,
+      "unit": "m3m3",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\smap\\res_250m\\2017_S2.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\smap\\res_250m\\2017_S2_250m_m3m3.tif"
+    },
+    {
+      "dataset": "smap",
+      "year": 2017,
+      "season_token": "S3",
+      "season": "JJA",
+      "res_m": 250,
+      "unit": "m3m3",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\smap\\res_250m\\2017_S3.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\smap\\res_250m\\2017_S3_250m_m3m3.tif"
+    },
+    {
+      "dataset": "smap",
+      "year": 2017,
+      "season_token": "S4",
+      "season": "SON",
+      "res_m": 250,
+      "unit": "m3m3",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\smap\\res_250m\\2017_S4.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\smap\\res_250m\\2017_S4_250m_m3m3.tif"
+    },
+    {
+      "dataset": "smap",
+      "year": 2018,
+      "season_token": "S1",
+      "season": "DJF",
+      "res_m": 250,
+      "unit": "m3m3",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\smap\\res_250m\\2018_S1.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\smap\\res_250m\\2018_S1_250m_m3m3.tif"
+    },
+    {
+      "dataset": "smap",
+      "year": 2018,
+      "season_token": "S2",
+      "season": "MAM",
+      "res_m": 250,
+      "unit": "m3m3",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\smap\\res_250m\\2018_S2.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\smap\\res_250m\\2018_S2_250m_m3m3.tif"
+    },
+    {
+      "dataset": "smap",
+      "year": 2018,
+      "season_token": "S3",
+      "season": "JJA",
+      "res_m": 250,
+      "unit": "m3m3",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\smap\\res_250m\\2018_S3.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\smap\\res_250m\\2018_S3_250m_m3m3.tif"
+    },
+    {
+      "dataset": "smap",
+      "year": 2018,
+      "season_token": "S4",
+      "season": "SON",
+      "res_m": 250,
+      "unit": "m3m3",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\smap\\res_250m\\2018_S4.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\smap\\res_250m\\2018_S4_250m_m3m3.tif"
+    },
+    {
+      "dataset": "smap",
+      "year": 2019,
+      "season_token": "S1",
+      "season": "DJF",
+      "res_m": 250,
+      "unit": "m3m3",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\smap\\res_250m\\2019_S1.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\smap\\res_250m\\2019_S1_250m_m3m3.tif"
+    },
+    {
+      "dataset": "smap",
+      "year": 2019,
+      "season_token": "S2",
+      "season": "MAM",
+      "res_m": 250,
+      "unit": "m3m3",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\smap\\res_250m\\2019_S2.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\smap\\res_250m\\2019_S2_250m_m3m3.tif"
+    },
+    {
+      "dataset": "smap",
+      "year": 2019,
+      "season_token": "S3",
+      "season": "JJA",
+      "res_m": 250,
+      "unit": "m3m3",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\smap\\res_250m\\2019_S3.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\smap\\res_250m\\2019_S3_250m_m3m3.tif"
+    },
+    {
+      "dataset": "smap",
+      "year": 2019,
+      "season_token": "S4",
+      "season": "SON",
+      "res_m": 250,
+      "unit": "m3m3",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\smap\\res_250m\\2019_S4.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\smap\\res_250m\\2019_S4_250m_m3m3.tif"
+    },
+    {
+      "dataset": "smap",
+      "year": 2020,
+      "season_token": "S1",
+      "season": "DJF",
+      "res_m": 250,
+      "unit": "m3m3",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\smap\\res_250m\\2020_S1.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\smap\\res_250m\\2020_S1_250m_m3m3.tif"
+    },
+    {
+      "dataset": "smap",
+      "year": 2015,
+      "season_token": "S2",
+      "season": "MAM",
+      "res_m": 25,
+      "unit": "m3m3",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\smap\\res_25m\\2015_S2.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\smap\\res_25m\\2015_S2_25m_m3m3.tif"
+    },
+    {
+      "dataset": "smap",
+      "year": 2015,
+      "season_token": "S3",
+      "season": "JJA",
+      "res_m": 25,
+      "unit": "m3m3",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\smap\\res_25m\\2015_S3.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\smap\\res_25m\\2015_S3_25m_m3m3.tif"
+    },
+    {
+      "dataset": "smap",
+      "year": 2015,
+      "season_token": "S4",
+      "season": "SON",
+      "res_m": 25,
+      "unit": "m3m3",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\smap\\res_25m\\2015_S4.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\smap\\res_25m\\2015_S4_25m_m3m3.tif"
+    },
+    {
+      "dataset": "smap",
+      "year": 2016,
+      "season_token": "S1",
+      "season": "DJF",
+      "res_m": 25,
+      "unit": "m3m3",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\smap\\res_25m\\2016_S1.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\smap\\res_25m\\2016_S1_25m_m3m3.tif"
+    },
+    {
+      "dataset": "smap",
+      "year": 2016,
+      "season_token": "S2",
+      "season": "MAM",
+      "res_m": 25,
+      "unit": "m3m3",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\smap\\res_25m\\2016_S2.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\smap\\res_25m\\2016_S2_25m_m3m3.tif"
+    },
+    {
+      "dataset": "smap",
+      "year": 2016,
+      "season_token": "S3",
+      "season": "JJA",
+      "res_m": 25,
+      "unit": "m3m3",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\smap\\res_25m\\2016_S3.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\smap\\res_25m\\2016_S3_25m_m3m3.tif"
+    },
+    {
+      "dataset": "smap",
+      "year": 2016,
+      "season_token": "S4",
+      "season": "SON",
+      "res_m": 25,
+      "unit": "m3m3",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\smap\\res_25m\\2016_S4.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\smap\\res_25m\\2016_S4_25m_m3m3.tif"
+    },
+    {
+      "dataset": "smap",
+      "year": 2017,
+      "season_token": "S1",
+      "season": "DJF",
+      "res_m": 25,
+      "unit": "m3m3",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\smap\\res_25m\\2017_S1.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\smap\\res_25m\\2017_S1_25m_m3m3.tif"
+    },
+    {
+      "dataset": "smap",
+      "year": 2017,
+      "season_token": "S2",
+      "season": "MAM",
+      "res_m": 25,
+      "unit": "m3m3",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\smap\\res_25m\\2017_S2.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\smap\\res_25m\\2017_S2_25m_m3m3.tif"
+    },
+    {
+      "dataset": "smap",
+      "year": 2017,
+      "season_token": "S3",
+      "season": "JJA",
+      "res_m": 25,
+      "unit": "m3m3",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\smap\\res_25m\\2017_S3.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\smap\\res_25m\\2017_S3_25m_m3m3.tif"
+    },
+    {
+      "dataset": "smap",
+      "year": 2017,
+      "season_token": "S4",
+      "season": "SON",
+      "res_m": 25,
+      "unit": "m3m3",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\smap\\res_25m\\2017_S4.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\smap\\res_25m\\2017_S4_25m_m3m3.tif"
+    },
+    {
+      "dataset": "smap",
+      "year": 2018,
+      "season_token": "S1",
+      "season": "DJF",
+      "res_m": 25,
+      "unit": "m3m3",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\smap\\res_25m\\2018_S1.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\smap\\res_25m\\2018_S1_25m_m3m3.tif"
+    },
+    {
+      "dataset": "smap",
+      "year": 2018,
+      "season_token": "S2",
+      "season": "MAM",
+      "res_m": 25,
+      "unit": "m3m3",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\smap\\res_25m\\2018_S2.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\smap\\res_25m\\2018_S2_25m_m3m3.tif"
+    },
+    {
+      "dataset": "smap",
+      "year": 2018,
+      "season_token": "S3",
+      "season": "JJA",
+      "res_m": 25,
+      "unit": "m3m3",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\smap\\res_25m\\2018_S3.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\smap\\res_25m\\2018_S3_25m_m3m3.tif"
+    },
+    {
+      "dataset": "smap",
+      "year": 2018,
+      "season_token": "S4",
+      "season": "SON",
+      "res_m": 25,
+      "unit": "m3m3",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\smap\\res_25m\\2018_S4.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\smap\\res_25m\\2018_S4_25m_m3m3.tif"
+    },
+    {
+      "dataset": "smap",
+      "year": 2019,
+      "season_token": "S1",
+      "season": "DJF",
+      "res_m": 25,
+      "unit": "m3m3",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\smap\\res_25m\\2019_S1.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\smap\\res_25m\\2019_S1_25m_m3m3.tif"
+    },
+    {
+      "dataset": "smap",
+      "year": 2019,
+      "season_token": "S2",
+      "season": "MAM",
+      "res_m": 25,
+      "unit": "m3m3",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\smap\\res_25m\\2019_S2.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\smap\\res_25m\\2019_S2_25m_m3m3.tif"
+    },
+    {
+      "dataset": "smap",
+      "year": 2019,
+      "season_token": "S3",
+      "season": "JJA",
+      "res_m": 25,
+      "unit": "m3m3",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\smap\\res_25m\\2019_S3.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\smap\\res_25m\\2019_S3_25m_m3m3.tif"
+    },
+    {
+      "dataset": "smap",
+      "year": 2019,
+      "season_token": "S4",
+      "season": "SON",
+      "res_m": 25,
+      "unit": "m3m3",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\smap\\res_25m\\2019_S4.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\smap\\res_25m\\2019_S4_25m_m3m3.tif"
+    },
+    {
+      "dataset": "smap",
+      "year": 2020,
+      "season_token": "S1",
+      "season": "DJF",
+      "res_m": 25,
+      "unit": "m3m3",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\smap\\res_25m\\2020_S1.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\smap\\res_25m\\2020_S1_25m_m3m3.tif"
+    },
+    {
+      "dataset": "gpm",
+      "year": 2006,
+      "season_token": "S1",
+      "season": "DJF",
+      "res_m": 250,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2006_S1.png",
+      "cog": [
+        "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2006_S1_250m_mm.tif",
+        "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2006_S1_250m_mm.tmp.tif"
+      ]
+    },
+    {
+      "dataset": "gpm",
+      "year": 2006,
+      "season_token": "S2",
+      "season": "MAM",
+      "res_m": 250,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2006_S2.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2006_S2_250m_mm.tif"
+    },
+    {
+      "dataset": "gpm",
+      "year": 2006,
+      "season_token": "S3",
+      "season": "JJA",
+      "res_m": 250,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2006_S3.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2006_S3_250m_mm.tif"
+    },
+    {
+      "dataset": "gpm",
+      "year": 2006,
+      "season_token": "S4",
+      "season": "SON",
+      "res_m": 250,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2006_S4.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2006_S4_250m_mm.tif"
+    },
+    {
+      "dataset": "gpm",
+      "year": 2007,
+      "season_token": "S1",
+      "season": "DJF",
+      "res_m": 250,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2007_S1.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2007_S1_250m_mm.tif"
+    },
+    {
+      "dataset": "gpm",
+      "year": 2007,
+      "season_token": "S2",
+      "season": "MAM",
+      "res_m": 250,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2007_S2.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2007_S2_250m_mm.tif"
+    },
+    {
+      "dataset": "gpm",
+      "year": 2007,
+      "season_token": "S3",
+      "season": "JJA",
+      "res_m": 250,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2007_S3.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2007_S3_250m_mm.tif"
+    },
+    {
+      "dataset": "gpm",
+      "year": 2007,
+      "season_token": "S4",
+      "season": "SON",
+      "res_m": 250,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2007_S4.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2007_S4_250m_mm.tif"
+    },
+    {
+      "dataset": "gpm",
+      "year": 2008,
+      "season_token": "S1",
+      "season": "DJF",
+      "res_m": 250,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2008_S1.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2008_S1_250m_mm.tif"
+    },
+    {
+      "dataset": "gpm",
+      "year": 2008,
+      "season_token": "S2",
+      "season": "MAM",
+      "res_m": 250,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2008_S2.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2008_S2_250m_mm.tif"
+    },
+    {
+      "dataset": "gpm",
+      "year": 2008,
+      "season_token": "S3",
+      "season": "JJA",
+      "res_m": 250,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2008_S3.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2008_S3_250m_mm.tif"
+    },
+    {
+      "dataset": "gpm",
+      "year": 2008,
+      "season_token": "S4",
+      "season": "SON",
+      "res_m": 250,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2008_S4.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2008_S4_250m_mm.tif"
+    },
+    {
+      "dataset": "gpm",
+      "year": 2009,
+      "season_token": "S1",
+      "season": "DJF",
+      "res_m": 250,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2009_S1.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2009_S1_250m_mm.tif"
+    },
+    {
+      "dataset": "gpm",
+      "year": 2009,
+      "season_token": "S2",
+      "season": "MAM",
+      "res_m": 250,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2009_S2.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2009_S2_250m_mm.tif"
+    },
+    {
+      "dataset": "gpm",
+      "year": 2009,
+      "season_token": "S3",
+      "season": "JJA",
+      "res_m": 250,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2009_S3.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2009_S3_250m_mm.tif"
+    },
+    {
+      "dataset": "gpm",
+      "year": 2009,
+      "season_token": "S4",
+      "season": "SON",
+      "res_m": 250,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2009_S4.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2009_S4_250m_mm.tif"
+    },
+    {
+      "dataset": "gpm",
+      "year": 2010,
+      "season_token": "S1",
+      "season": "DJF",
+      "res_m": 250,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2010_S1.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2010_S1_250m_mm.tif"
+    },
+    {
+      "dataset": "gpm",
+      "year": 2010,
+      "season_token": "S2",
+      "season": "MAM",
+      "res_m": 250,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2010_S2.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2010_S2_250m_mm.tif"
+    },
+    {
+      "dataset": "gpm",
+      "year": 2010,
+      "season_token": "S3",
+      "season": "JJA",
+      "res_m": 250,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2010_S3.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2010_S3_250m_mm.tif"
+    },
+    {
+      "dataset": "gpm",
+      "year": 2010,
+      "season_token": "S4",
+      "season": "SON",
+      "res_m": 250,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2010_S4.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2010_S4_250m_mm.tif"
+    },
+    {
+      "dataset": "gpm",
+      "year": 2011,
+      "season_token": "S1",
+      "season": "DJF",
+      "res_m": 250,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2011_S1.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2011_S1_250m_mm.tif"
+    },
+    {
+      "dataset": "gpm",
+      "year": 2011,
+      "season_token": "S2",
+      "season": "MAM",
+      "res_m": 250,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2011_S2.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2011_S2_250m_mm.tif"
+    },
+    {
+      "dataset": "gpm",
+      "year": 2011,
+      "season_token": "S3",
+      "season": "JJA",
+      "res_m": 250,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2011_S3.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2011_S3_250m_mm.tif"
+    },
+    {
+      "dataset": "gpm",
+      "year": 2011,
+      "season_token": "S4",
+      "season": "SON",
+      "res_m": 250,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2011_S4.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2011_S4_250m_mm.tif"
+    },
+    {
+      "dataset": "gpm",
+      "year": 2012,
+      "season_token": "S1",
+      "season": "DJF",
+      "res_m": 250,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2012_S1.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2012_S1_250m_mm.tif"
+    },
+    {
+      "dataset": "gpm",
+      "year": 2012,
+      "season_token": "S2",
+      "season": "MAM",
+      "res_m": 250,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2012_S2.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2012_S2_250m_mm.tif"
+    },
+    {
+      "dataset": "gpm",
+      "year": 2012,
+      "season_token": "S3",
+      "season": "JJA",
+      "res_m": 250,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2012_S3.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2012_S3_250m_mm.tif"
+    },
+    {
+      "dataset": "gpm",
+      "year": 2012,
+      "season_token": "S4",
+      "season": "SON",
+      "res_m": 250,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2012_S4.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2012_S4_250m_mm.tif"
+    },
+    {
+      "dataset": "gpm",
+      "year": 2013,
+      "season_token": "S1",
+      "season": "DJF",
+      "res_m": 250,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2013_S1.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2013_S1_250m_mm.tif"
+    },
+    {
+      "dataset": "gpm",
+      "year": 2013,
+      "season_token": "S2",
+      "season": "MAM",
+      "res_m": 250,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2013_S2.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2013_S2_250m_mm.tif"
+    },
+    {
+      "dataset": "gpm",
+      "year": 2013,
+      "season_token": "S3",
+      "season": "JJA",
+      "res_m": 250,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2013_S3.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2013_S3_250m_mm.tif"
+    },
+    {
+      "dataset": "gpm",
+      "year": 2013,
+      "season_token": "S4",
+      "season": "SON",
+      "res_m": 250,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2013_S4.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2013_S4_250m_mm.tif"
+    },
+    {
+      "dataset": "gpm",
+      "year": 2014,
+      "season_token": "S1",
+      "season": "DJF",
+      "res_m": 250,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2014_S1.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2014_S1_250m_mm.tif"
+    },
+    {
+      "dataset": "gpm",
+      "year": 2014,
+      "season_token": "S2",
+      "season": "MAM",
+      "res_m": 250,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2014_S2.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2014_S2_250m_mm.tif"
+    },
+    {
+      "dataset": "gpm",
+      "year": 2014,
+      "season_token": "S3",
+      "season": "JJA",
+      "res_m": 250,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2014_S3.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2014_S3_250m_mm.tif"
+    },
+    {
+      "dataset": "gpm",
+      "year": 2014,
+      "season_token": "S4",
+      "season": "SON",
+      "res_m": 250,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2014_S4.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2014_S4_250m_mm.tif"
+    },
+    {
+      "dataset": "gpm",
+      "year": 2015,
+      "season_token": "S1",
+      "season": "DJF",
+      "res_m": 250,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2015_S1.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2015_S1_250m_mm.tif"
+    },
+    {
+      "dataset": "gpm",
+      "year": 2015,
+      "season_token": "S2",
+      "season": "MAM",
+      "res_m": 250,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2015_S2.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2015_S2_250m_mm.tif"
+    },
+    {
+      "dataset": "gpm",
+      "year": 2015,
+      "season_token": "S3",
+      "season": "JJA",
+      "res_m": 250,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2015_S3.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2015_S3_250m_mm.tif"
+    },
+    {
+      "dataset": "gpm",
+      "year": 2015,
+      "season_token": "S4",
+      "season": "SON",
+      "res_m": 250,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2015_S4.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2015_S4_250m_mm.tif"
+    },
+    {
+      "dataset": "gpm",
+      "year": 2016,
+      "season_token": "S1",
+      "season": "DJF",
+      "res_m": 250,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2016_S1.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2016_S1_250m_mm.tif"
+    },
+    {
+      "dataset": "gpm",
+      "year": 2016,
+      "season_token": "S2",
+      "season": "MAM",
+      "res_m": 250,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2016_S2.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2016_S2_250m_mm.tif"
+    },
+    {
+      "dataset": "gpm",
+      "year": 2016,
+      "season_token": "S3",
+      "season": "JJA",
+      "res_m": 250,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2016_S3.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2016_S3_250m_mm.tif"
+    },
+    {
+      "dataset": "gpm",
+      "year": 2016,
+      "season_token": "S4",
+      "season": "SON",
+      "res_m": 250,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2016_S4.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2016_S4_250m_mm.tif"
+    },
+    {
+      "dataset": "gpm",
+      "year": 2017,
+      "season_token": "S1",
+      "season": "DJF",
+      "res_m": 250,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2017_S1.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2017_S1_250m_mm.tif"
+    },
+    {
+      "dataset": "gpm",
+      "year": 2017,
+      "season_token": "S2",
+      "season": "MAM",
+      "res_m": 250,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2017_S2.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2017_S2_250m_mm.tif"
+    },
+    {
+      "dataset": "gpm",
+      "year": 2017,
+      "season_token": "S3",
+      "season": "JJA",
+      "res_m": 250,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2017_S3.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2017_S3_250m_mm.tif"
+    },
+    {
+      "dataset": "gpm",
+      "year": 2017,
+      "season_token": "S4",
+      "season": "SON",
+      "res_m": 250,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2017_S4.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2017_S4_250m_mm.tif"
+    },
+    {
+      "dataset": "gpm",
+      "year": 2018,
+      "season_token": "S1",
+      "season": "DJF",
+      "res_m": 250,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2018_S1.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2018_S1_250m_mm.tif"
+    },
+    {
+      "dataset": "gpm",
+      "year": 2018,
+      "season_token": "S2",
+      "season": "MAM",
+      "res_m": 250,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2018_S2.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2018_S2_250m_mm.tif"
+    },
+    {
+      "dataset": "gpm",
+      "year": 2018,
+      "season_token": "S3",
+      "season": "JJA",
+      "res_m": 250,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2018_S3.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2018_S3_250m_mm.tif"
+    },
+    {
+      "dataset": "gpm",
+      "year": 2018,
+      "season_token": "S4",
+      "season": "SON",
+      "res_m": 250,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2018_S4.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2018_S4_250m_mm.tif"
+    },
+    {
+      "dataset": "gpm",
+      "year": 2019,
+      "season_token": "S1",
+      "season": "DJF",
+      "res_m": 250,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2019_S1.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2019_S1_250m_mm.tif"
+    },
+    {
+      "dataset": "gpm",
+      "year": 2019,
+      "season_token": "S2",
+      "season": "MAM",
+      "res_m": 250,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2019_S2.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2019_S2_250m_mm.tif"
+    },
+    {
+      "dataset": "gpm",
+      "year": 2019,
+      "season_token": "S3",
+      "season": "JJA",
+      "res_m": 250,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2019_S3.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2019_S3_250m_mm.tif"
+    },
+    {
+      "dataset": "gpm",
+      "year": 2019,
+      "season_token": "S4",
+      "season": "SON",
+      "res_m": 250,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2019_S4.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2019_S4_250m_mm.tif"
+    },
+    {
+      "dataset": "gpm",
+      "year": 2020,
+      "season_token": "S1",
+      "season": "DJF",
+      "res_m": 250,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2020_S1.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2020_S1_250m_mm.tif"
+    },
+    {
+      "dataset": "gpm",
+      "year": 2020,
+      "season_token": "S2",
+      "season": "MAM",
+      "res_m": 250,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2020_S2.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2020_S2_250m_mm.tif"
+    },
+    {
+      "dataset": "gpm",
+      "year": 2020,
+      "season_token": "S3",
+      "season": "JJA",
+      "res_m": 250,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2020_S3.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2020_S3_250m_mm.tif"
+    },
+    {
+      "dataset": "gpm",
+      "year": 2020,
+      "season_token": "S4",
+      "season": "SON",
+      "res_m": 250,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2020_S4.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2020_S4_250m_mm.tif"
+    },
+    {
+      "dataset": "gpm",
+      "year": 2021,
+      "season_token": "S1",
+      "season": "DJF",
+      "res_m": 250,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2021_S1.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2021_S1_250m_mm.tif"
+    },
+    {
+      "dataset": "gpm",
+      "year": 2021,
+      "season_token": "S2",
+      "season": "MAM",
+      "res_m": 250,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2021_S2.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2021_S2_250m_mm.tif"
+    },
+    {
+      "dataset": "gpm",
+      "year": 2021,
+      "season_token": "S3",
+      "season": "JJA",
+      "res_m": 250,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2021_S3.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2021_S3_250m_mm.tif"
+    },
+    {
+      "dataset": "gpm",
+      "year": 2021,
+      "season_token": "S4",
+      "season": "SON",
+      "res_m": 250,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2021_S4.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2021_S4_250m_mm.tif"
+    },
+    {
+      "dataset": "gpm",
+      "year": 2022,
+      "season_token": "S1",
+      "season": "DJF",
+      "res_m": 250,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2022_S1.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2022_S1_250m_mm.tif"
+    },
+    {
+      "dataset": "gpm",
+      "year": 2022,
+      "season_token": "S2",
+      "season": "MAM",
+      "res_m": 250,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2022_S2.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2022_S2_250m_mm.tif"
+    },
+    {
+      "dataset": "gpm",
+      "year": 2022,
+      "season_token": "S3",
+      "season": "JJA",
+      "res_m": 250,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2022_S3.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2022_S3_250m_mm.tif"
+    },
+    {
+      "dataset": "gpm",
+      "year": 2022,
+      "season_token": "S4",
+      "season": "SON",
+      "res_m": 250,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2022_S4.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2022_S4_250m_mm.tif"
+    },
+    {
+      "dataset": "gpm",
+      "year": 2023,
+      "season_token": "S1",
+      "season": "DJF",
+      "res_m": 250,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2023_S1.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2023_S1_250m_mm.tif"
+    },
+    {
+      "dataset": "gpm",
+      "year": 2023,
+      "season_token": "S2",
+      "season": "MAM",
+      "res_m": 250,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2023_S2.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2023_S2_250m_mm.tif"
+    },
+    {
+      "dataset": "gpm",
+      "year": 2023,
+      "season_token": "S3",
+      "season": "JJA",
+      "res_m": 250,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2023_S3.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2023_S3_250m_mm.tif"
+    },
+    {
+      "dataset": "gpm",
+      "year": 2023,
+      "season_token": "S4",
+      "season": "SON",
+      "res_m": 250,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2023_S4.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2023_S4_250m_mm.tif"
+    },
+    {
+      "dataset": "gpm",
+      "year": 2024,
+      "season_token": "S1",
+      "season": "DJF",
+      "res_m": 250,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2024_S1.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2024_S1_250m_mm.tif"
+    },
+    {
+      "dataset": "gpm",
+      "year": 2024,
+      "season_token": "S2",
+      "season": "MAM",
+      "res_m": 250,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2024_S2.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2024_S2_250m_mm.tif"
+    },
+    {
+      "dataset": "gpm",
+      "year": 2024,
+      "season_token": "S3",
+      "season": "JJA",
+      "res_m": 250,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2024_S3.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2024_S3_250m_mm.tif"
+    },
+    {
+      "dataset": "gpm",
+      "year": 2024,
+      "season_token": "S4",
+      "season": "SON",
+      "res_m": 250,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2024_S4.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2024_S4_250m_mm.tif"
+    },
+    {
+      "dataset": "gpm",
+      "year": 2025,
+      "season_token": "S1",
+      "season": "DJF",
+      "res_m": 250,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2025_S1.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2025_S1_250m_mm.tif"
+    },
+    {
+      "dataset": "gpm",
+      "year": 2025,
+      "season_token": "S2",
+      "season": "MAM",
+      "res_m": 250,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2025_S2.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_250m\\2025_S2_250m_mm.tif"
+    },
+    {
+      "dataset": "gpm",
+      "year": 2006,
+      "season_token": "S1",
+      "season": "DJF",
+      "res_m": 25,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2006_S1.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2006_S1_25m_mm.tif"
+    },
+    {
+      "dataset": "gpm",
+      "year": 2006,
+      "season_token": "S2",
+      "season": "MAM",
+      "res_m": 25,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2006_S2.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2006_S2_25m_mm.tif"
+    },
+    {
+      "dataset": "gpm",
+      "year": 2006,
+      "season_token": "S3",
+      "season": "JJA",
+      "res_m": 25,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2006_S3.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2006_S3_25m_mm.tif"
+    },
+    {
+      "dataset": "gpm",
+      "year": 2006,
+      "season_token": "S4",
+      "season": "SON",
+      "res_m": 25,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2006_S4.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2006_S4_25m_mm.tif"
+    },
+    {
+      "dataset": "gpm",
+      "year": 2007,
+      "season_token": "S1",
+      "season": "DJF",
+      "res_m": 25,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2007_S1.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2007_S1_25m_mm.tif"
+    },
+    {
+      "dataset": "gpm",
+      "year": 2007,
+      "season_token": "S2",
+      "season": "MAM",
+      "res_m": 25,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2007_S2.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2007_S2_25m_mm.tif"
+    },
+    {
+      "dataset": "gpm",
+      "year": 2007,
+      "season_token": "S3",
+      "season": "JJA",
+      "res_m": 25,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2007_S3.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2007_S3_25m_mm.tif"
+    },
+    {
+      "dataset": "gpm",
+      "year": 2007,
+      "season_token": "S4",
+      "season": "SON",
+      "res_m": 25,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2007_S4.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2007_S4_25m_mm.tif"
+    },
+    {
+      "dataset": "gpm",
+      "year": 2008,
+      "season_token": "S1",
+      "season": "DJF",
+      "res_m": 25,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2008_S1.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2008_S1_25m_mm.tif"
+    },
+    {
+      "dataset": "gpm",
+      "year": 2008,
+      "season_token": "S2",
+      "season": "MAM",
+      "res_m": 25,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2008_S2.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2008_S2_25m_mm.tif"
+    },
+    {
+      "dataset": "gpm",
+      "year": 2008,
+      "season_token": "S3",
+      "season": "JJA",
+      "res_m": 25,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2008_S3.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2008_S3_25m_mm.tif"
+    },
+    {
+      "dataset": "gpm",
+      "year": 2008,
+      "season_token": "S4",
+      "season": "SON",
+      "res_m": 25,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2008_S4.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2008_S4_25m_mm.tif"
+    },
+    {
+      "dataset": "gpm",
+      "year": 2009,
+      "season_token": "S1",
+      "season": "DJF",
+      "res_m": 25,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2009_S1.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2009_S1_25m_mm.tif"
+    },
+    {
+      "dataset": "gpm",
+      "year": 2009,
+      "season_token": "S2",
+      "season": "MAM",
+      "res_m": 25,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2009_S2.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2009_S2_25m_mm.tif"
+    },
+    {
+      "dataset": "gpm",
+      "year": 2009,
+      "season_token": "S3",
+      "season": "JJA",
+      "res_m": 25,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2009_S3.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2009_S3_25m_mm.tif"
+    },
+    {
+      "dataset": "gpm",
+      "year": 2009,
+      "season_token": "S4",
+      "season": "SON",
+      "res_m": 25,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2009_S4.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2009_S4_25m_mm.tif"
+    },
+    {
+      "dataset": "gpm",
+      "year": 2010,
+      "season_token": "S1",
+      "season": "DJF",
+      "res_m": 25,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2010_S1.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2010_S1_25m_mm.tif"
+    },
+    {
+      "dataset": "gpm",
+      "year": 2010,
+      "season_token": "S2",
+      "season": "MAM",
+      "res_m": 25,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2010_S2.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2010_S2_25m_mm.tif"
+    },
+    {
+      "dataset": "gpm",
+      "year": 2010,
+      "season_token": "S3",
+      "season": "JJA",
+      "res_m": 25,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2010_S3.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2010_S3_25m_mm.tif"
+    },
+    {
+      "dataset": "gpm",
+      "year": 2010,
+      "season_token": "S4",
+      "season": "SON",
+      "res_m": 25,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2010_S4.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2010_S4_25m_mm.tif"
+    },
+    {
+      "dataset": "gpm",
+      "year": 2011,
+      "season_token": "S1",
+      "season": "DJF",
+      "res_m": 25,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2011_S1.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2011_S1_25m_mm.tif"
+    },
+    {
+      "dataset": "gpm",
+      "year": 2011,
+      "season_token": "S2",
+      "season": "MAM",
+      "res_m": 25,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2011_S2.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2011_S2_25m_mm.tif"
+    },
+    {
+      "dataset": "gpm",
+      "year": 2011,
+      "season_token": "S3",
+      "season": "JJA",
+      "res_m": 25,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2011_S3.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2011_S3_25m_mm.tif"
+    },
+    {
+      "dataset": "gpm",
+      "year": 2011,
+      "season_token": "S4",
+      "season": "SON",
+      "res_m": 25,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2011_S4.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2011_S4_25m_mm.tif"
+    },
+    {
+      "dataset": "gpm",
+      "year": 2012,
+      "season_token": "S1",
+      "season": "DJF",
+      "res_m": 25,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2012_S1.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2012_S1_25m_mm.tif"
+    },
+    {
+      "dataset": "gpm",
+      "year": 2012,
+      "season_token": "S2",
+      "season": "MAM",
+      "res_m": 25,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2012_S2.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2012_S2_25m_mm.tif"
+    },
+    {
+      "dataset": "gpm",
+      "year": 2012,
+      "season_token": "S3",
+      "season": "JJA",
+      "res_m": 25,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2012_S3.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2012_S3_25m_mm.tif"
+    },
+    {
+      "dataset": "gpm",
+      "year": 2012,
+      "season_token": "S4",
+      "season": "SON",
+      "res_m": 25,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2012_S4.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2012_S4_25m_mm.tif"
+    },
+    {
+      "dataset": "gpm",
+      "year": 2013,
+      "season_token": "S1",
+      "season": "DJF",
+      "res_m": 25,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2013_S1.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2013_S1_25m_mm.tif"
+    },
+    {
+      "dataset": "gpm",
+      "year": 2013,
+      "season_token": "S2",
+      "season": "MAM",
+      "res_m": 25,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2013_S2.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2013_S2_25m_mm.tif"
+    },
+    {
+      "dataset": "gpm",
+      "year": 2013,
+      "season_token": "S3",
+      "season": "JJA",
+      "res_m": 25,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2013_S3.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2013_S3_25m_mm.tif"
+    },
+    {
+      "dataset": "gpm",
+      "year": 2013,
+      "season_token": "S4",
+      "season": "SON",
+      "res_m": 25,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2013_S4.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2013_S4_25m_mm.tif"
+    },
+    {
+      "dataset": "gpm",
+      "year": 2014,
+      "season_token": "S1",
+      "season": "DJF",
+      "res_m": 25,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2014_S1.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2014_S1_25m_mm.tif"
+    },
+    {
+      "dataset": "gpm",
+      "year": 2014,
+      "season_token": "S2",
+      "season": "MAM",
+      "res_m": 25,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2014_S2.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2014_S2_25m_mm.tif"
+    },
+    {
+      "dataset": "gpm",
+      "year": 2014,
+      "season_token": "S3",
+      "season": "JJA",
+      "res_m": 25,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2014_S3.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2014_S3_25m_mm.tif"
+    },
+    {
+      "dataset": "gpm",
+      "year": 2014,
+      "season_token": "S4",
+      "season": "SON",
+      "res_m": 25,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2014_S4.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2014_S4_25m_mm.tif"
+    },
+    {
+      "dataset": "gpm",
+      "year": 2015,
+      "season_token": "S1",
+      "season": "DJF",
+      "res_m": 25,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2015_S1.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2015_S1_25m_mm.tif"
+    },
+    {
+      "dataset": "gpm",
+      "year": 2015,
+      "season_token": "S2",
+      "season": "MAM",
+      "res_m": 25,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2015_S2.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2015_S2_25m_mm.tif"
+    },
+    {
+      "dataset": "gpm",
+      "year": 2015,
+      "season_token": "S3",
+      "season": "JJA",
+      "res_m": 25,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2015_S3.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2015_S3_25m_mm.tif"
+    },
+    {
+      "dataset": "gpm",
+      "year": 2015,
+      "season_token": "S4",
+      "season": "SON",
+      "res_m": 25,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2015_S4.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2015_S4_25m_mm.tif"
+    },
+    {
+      "dataset": "gpm",
+      "year": 2016,
+      "season_token": "S1",
+      "season": "DJF",
+      "res_m": 25,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2016_S1.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2016_S1_25m_mm.tif"
+    },
+    {
+      "dataset": "gpm",
+      "year": 2016,
+      "season_token": "S2",
+      "season": "MAM",
+      "res_m": 25,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2016_S2.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2016_S2_25m_mm.tif"
+    },
+    {
+      "dataset": "gpm",
+      "year": 2016,
+      "season_token": "S3",
+      "season": "JJA",
+      "res_m": 25,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2016_S3.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2016_S3_25m_mm.tif"
+    },
+    {
+      "dataset": "gpm",
+      "year": 2016,
+      "season_token": "S4",
+      "season": "SON",
+      "res_m": 25,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2016_S4.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2016_S4_25m_mm.tif"
+    },
+    {
+      "dataset": "gpm",
+      "year": 2017,
+      "season_token": "S1",
+      "season": "DJF",
+      "res_m": 25,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2017_S1.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2017_S1_25m_mm.tif"
+    },
+    {
+      "dataset": "gpm",
+      "year": 2017,
+      "season_token": "S2",
+      "season": "MAM",
+      "res_m": 25,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2017_S2.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2017_S2_25m_mm.tif"
+    },
+    {
+      "dataset": "gpm",
+      "year": 2017,
+      "season_token": "S3",
+      "season": "JJA",
+      "res_m": 25,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2017_S3.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2017_S3_25m_mm.tif"
+    },
+    {
+      "dataset": "gpm",
+      "year": 2017,
+      "season_token": "S4",
+      "season": "SON",
+      "res_m": 25,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2017_S4.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2017_S4_25m_mm.tif"
+    },
+    {
+      "dataset": "gpm",
+      "year": 2018,
+      "season_token": "S1",
+      "season": "DJF",
+      "res_m": 25,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2018_S1.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2018_S1_25m_mm.tif"
+    },
+    {
+      "dataset": "gpm",
+      "year": 2018,
+      "season_token": "S2",
+      "season": "MAM",
+      "res_m": 25,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2018_S2.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2018_S2_25m_mm.tif"
+    },
+    {
+      "dataset": "gpm",
+      "year": 2018,
+      "season_token": "S3",
+      "season": "JJA",
+      "res_m": 25,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2018_S3.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2018_S3_25m_mm.tif"
+    },
+    {
+      "dataset": "gpm",
+      "year": 2018,
+      "season_token": "S4",
+      "season": "SON",
+      "res_m": 25,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2018_S4.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2018_S4_25m_mm.tif"
+    },
+    {
+      "dataset": "gpm",
+      "year": 2019,
+      "season_token": "S1",
+      "season": "DJF",
+      "res_m": 25,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2019_S1.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2019_S1_25m_mm.tif"
+    },
+    {
+      "dataset": "gpm",
+      "year": 2019,
+      "season_token": "S2",
+      "season": "MAM",
+      "res_m": 25,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2019_S2.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2019_S2_25m_mm.tif"
+    },
+    {
+      "dataset": "gpm",
+      "year": 2019,
+      "season_token": "S3",
+      "season": "JJA",
+      "res_m": 25,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2019_S3.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2019_S3_25m_mm.tif"
+    },
+    {
+      "dataset": "gpm",
+      "year": 2019,
+      "season_token": "S4",
+      "season": "SON",
+      "res_m": 25,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2019_S4.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2019_S4_25m_mm.tif"
+    },
+    {
+      "dataset": "gpm",
+      "year": 2020,
+      "season_token": "S1",
+      "season": "DJF",
+      "res_m": 25,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2020_S1.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2020_S1_25m_mm.tif"
+    },
+    {
+      "dataset": "gpm",
+      "year": 2020,
+      "season_token": "S2",
+      "season": "MAM",
+      "res_m": 25,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2020_S2.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2020_S2_25m_mm.tif"
+    },
+    {
+      "dataset": "gpm",
+      "year": 2020,
+      "season_token": "S3",
+      "season": "JJA",
+      "res_m": 25,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2020_S3.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2020_S3_25m_mm.tif"
+    },
+    {
+      "dataset": "gpm",
+      "year": 2020,
+      "season_token": "S4",
+      "season": "SON",
+      "res_m": 25,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2020_S4.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2020_S4_25m_mm.tif"
+    },
+    {
+      "dataset": "gpm",
+      "year": 2021,
+      "season_token": "S1",
+      "season": "DJF",
+      "res_m": 25,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2021_S1.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2021_S1_25m_mm.tif"
+    },
+    {
+      "dataset": "gpm",
+      "year": 2021,
+      "season_token": "S2",
+      "season": "MAM",
+      "res_m": 25,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2021_S2.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2021_S2_25m_mm.tif"
+    },
+    {
+      "dataset": "gpm",
+      "year": 2021,
+      "season_token": "S3",
+      "season": "JJA",
+      "res_m": 25,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2021_S3.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2021_S3_25m_mm.tif"
+    },
+    {
+      "dataset": "gpm",
+      "year": 2021,
+      "season_token": "S4",
+      "season": "SON",
+      "res_m": 25,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2021_S4.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2021_S4_25m_mm.tif"
+    },
+    {
+      "dataset": "gpm",
+      "year": 2022,
+      "season_token": "S1",
+      "season": "DJF",
+      "res_m": 25,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2022_S1.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2022_S1_25m_mm.tif"
+    },
+    {
+      "dataset": "gpm",
+      "year": 2022,
+      "season_token": "S2",
+      "season": "MAM",
+      "res_m": 25,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2022_S2.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2022_S2_25m_mm.tif"
+    },
+    {
+      "dataset": "gpm",
+      "year": 2022,
+      "season_token": "S3",
+      "season": "JJA",
+      "res_m": 25,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2022_S3.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2022_S3_25m_mm.tif"
+    },
+    {
+      "dataset": "gpm",
+      "year": 2022,
+      "season_token": "S4",
+      "season": "SON",
+      "res_m": 25,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2022_S4.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2022_S4_25m_mm.tif"
+    },
+    {
+      "dataset": "gpm",
+      "year": 2023,
+      "season_token": "S1",
+      "season": "DJF",
+      "res_m": 25,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2023_S1.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2023_S1_25m_mm.tif"
+    },
+    {
+      "dataset": "gpm",
+      "year": 2023,
+      "season_token": "S2",
+      "season": "MAM",
+      "res_m": 25,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2023_S2.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2023_S2_25m_mm.tif"
+    },
+    {
+      "dataset": "gpm",
+      "year": 2023,
+      "season_token": "S3",
+      "season": "JJA",
+      "res_m": 25,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2023_S3.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2023_S3_25m_mm.tif"
+    },
+    {
+      "dataset": "gpm",
+      "year": 2023,
+      "season_token": "S4",
+      "season": "SON",
+      "res_m": 25,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2023_S4.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2023_S4_25m_mm.tif"
+    },
+    {
+      "dataset": "gpm",
+      "year": 2024,
+      "season_token": "S1",
+      "season": "DJF",
+      "res_m": 25,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2024_S1.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2024_S1_25m_mm.tif"
+    },
+    {
+      "dataset": "gpm",
+      "year": 2024,
+      "season_token": "S2",
+      "season": "MAM",
+      "res_m": 25,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2024_S2.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2024_S2_25m_mm.tif"
+    },
+    {
+      "dataset": "gpm",
+      "year": 2024,
+      "season_token": "S3",
+      "season": "JJA",
+      "res_m": 25,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2024_S3.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2024_S3_25m_mm.tif"
+    },
+    {
+      "dataset": "gpm",
+      "year": 2024,
+      "season_token": "S4",
+      "season": "SON",
+      "res_m": 25,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2024_S4.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2024_S4_25m_mm.tif"
+    },
+    {
+      "dataset": "gpm",
+      "year": 2025,
+      "season_token": "S1",
+      "season": "DJF",
+      "res_m": 25,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2025_S1.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2025_S1_25m_mm.tif"
+    },
+    {
+      "dataset": "gpm",
+      "year": 2025,
+      "season_token": "S2",
+      "season": "MAM",
+      "res_m": 25,
+      "unit": "mm",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2025_S2.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\gpm\\res_25m\\2025_S2_25m_mm.tif"
+    },
+    {
+      "dataset": "ndvi_modis",
+      "year": 2015,
+      "season_token": "S1",
+      "season": "DJF",
+      "res_m": 250,
+      "unit": "",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_250m\\2015_S1.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_250m\\2015_S1_250m.tif"
+    },
+    {
+      "dataset": "ndvi_modis",
+      "year": 2015,
+      "season_token": "S2",
+      "season": "MAM",
+      "res_m": 250,
+      "unit": "",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_250m\\2015_S2.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_250m\\2015_S2_250m.tif"
+    },
+    {
+      "dataset": "ndvi_modis",
+      "year": 2015,
+      "season_token": "S3",
+      "season": "JJA",
+      "res_m": 250,
+      "unit": "",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_250m\\2015_S3.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_250m\\2015_S3_250m.tif"
+    },
+    {
+      "dataset": "ndvi_modis",
+      "year": 2015,
+      "season_token": "S4",
+      "season": "SON",
+      "res_m": 250,
+      "unit": "",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_250m\\2015_S4.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_250m\\2015_S4_250m.tif"
+    },
+    {
+      "dataset": "ndvi_modis",
+      "year": 2016,
+      "season_token": "S1",
+      "season": "DJF",
+      "res_m": 250,
+      "unit": "",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_250m\\2016_S1.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_250m\\2016_S1_250m.tif"
+    },
+    {
+      "dataset": "ndvi_modis",
+      "year": 2016,
+      "season_token": "S2",
+      "season": "MAM",
+      "res_m": 250,
+      "unit": "",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_250m\\2016_S2.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_250m\\2016_S2_250m.tif"
+    },
+    {
+      "dataset": "ndvi_modis",
+      "year": 2016,
+      "season_token": "S3",
+      "season": "JJA",
+      "res_m": 250,
+      "unit": "",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_250m\\2016_S3.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_250m\\2016_S3_250m.tif"
+    },
+    {
+      "dataset": "ndvi_modis",
+      "year": 2016,
+      "season_token": "S4",
+      "season": "SON",
+      "res_m": 250,
+      "unit": "",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_250m\\2016_S4.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_250m\\2016_S4_250m.tif"
+    },
+    {
+      "dataset": "ndvi_modis",
+      "year": 2017,
+      "season_token": "S1",
+      "season": "DJF",
+      "res_m": 250,
+      "unit": "",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_250m\\2017_S1.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_250m\\2017_S1_250m.tif"
+    },
+    {
+      "dataset": "ndvi_modis",
+      "year": 2017,
+      "season_token": "S2",
+      "season": "MAM",
+      "res_m": 250,
+      "unit": "",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_250m\\2017_S2.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_250m\\2017_S2_250m.tif"
+    },
+    {
+      "dataset": "ndvi_modis",
+      "year": 2017,
+      "season_token": "S3",
+      "season": "JJA",
+      "res_m": 250,
+      "unit": "",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_250m\\2017_S3.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_250m\\2017_S3_250m.tif"
+    },
+    {
+      "dataset": "ndvi_modis",
+      "year": 2017,
+      "season_token": "S4",
+      "season": "SON",
+      "res_m": 250,
+      "unit": "",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_250m\\2017_S4.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_250m\\2017_S4_250m.tif"
+    },
+    {
+      "dataset": "ndvi_modis",
+      "year": 2018,
+      "season_token": "S1",
+      "season": "DJF",
+      "res_m": 250,
+      "unit": "",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_250m\\2018_S1.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_250m\\2018_S1_250m.tif"
+    },
+    {
+      "dataset": "ndvi_modis",
+      "year": 2018,
+      "season_token": "S2",
+      "season": "MAM",
+      "res_m": 250,
+      "unit": "",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_250m\\2018_S2.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_250m\\2018_S2_250m.tif"
+    },
+    {
+      "dataset": "ndvi_modis",
+      "year": 2018,
+      "season_token": "S3",
+      "season": "JJA",
+      "res_m": 250,
+      "unit": "",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_250m\\2018_S3.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_250m\\2018_S3_250m.tif"
+    },
+    {
+      "dataset": "ndvi_modis",
+      "year": 2018,
+      "season_token": "S4",
+      "season": "SON",
+      "res_m": 250,
+      "unit": "",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_250m\\2018_S4.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_250m\\2018_S4_250m.tif"
+    },
+    {
+      "dataset": "ndvi_modis",
+      "year": 2019,
+      "season_token": "S1",
+      "season": "DJF",
+      "res_m": 250,
+      "unit": "",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_250m\\2019_S1.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_250m\\2019_S1_250m.tif"
+    },
+    {
+      "dataset": "ndvi_modis",
+      "year": 2019,
+      "season_token": "S2",
+      "season": "MAM",
+      "res_m": 250,
+      "unit": "",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_250m\\2019_S2.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_250m\\2019_S2_250m.tif"
+    },
+    {
+      "dataset": "ndvi_modis",
+      "year": 2019,
+      "season_token": "S3",
+      "season": "JJA",
+      "res_m": 250,
+      "unit": "",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_250m\\2019_S3.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_250m\\2019_S3_250m.tif"
+    },
+    {
+      "dataset": "ndvi_modis",
+      "year": 2019,
+      "season_token": "S4",
+      "season": "SON",
+      "res_m": 250,
+      "unit": "",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_250m\\2019_S4.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_250m\\2019_S4_250m.tif"
+    },
+    {
+      "dataset": "ndvi_modis",
+      "year": 2020,
+      "season_token": "S1",
+      "season": "DJF",
+      "res_m": 250,
+      "unit": "",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_250m\\2020_S1.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_250m\\2020_S1_250m.tif"
+    },
+    {
+      "dataset": "ndvi_modis",
+      "year": 2020,
+      "season_token": "S2",
+      "season": "MAM",
+      "res_m": 250,
+      "unit": "",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_250m\\2020_S2.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_250m\\2020_S2_250m.tif"
+    },
+    {
+      "dataset": "ndvi_modis",
+      "year": 2020,
+      "season_token": "S3",
+      "season": "JJA",
+      "res_m": 250,
+      "unit": "",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_250m\\2020_S3.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_250m\\2020_S3_250m.tif"
+    },
+    {
+      "dataset": "ndvi_modis",
+      "year": 2020,
+      "season_token": "S4",
+      "season": "SON",
+      "res_m": 250,
+      "unit": "",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_250m\\2020_S4.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_250m\\2020_S4_250m.tif"
+    },
+    {
+      "dataset": "ndvi_modis",
+      "year": 2021,
+      "season_token": "S1",
+      "season": "DJF",
+      "res_m": 250,
+      "unit": "",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_250m\\2021_S1.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_250m\\2021_S1_250m.tif"
+    },
+    {
+      "dataset": "ndvi_modis",
+      "year": 2021,
+      "season_token": "S2",
+      "season": "MAM",
+      "res_m": 250,
+      "unit": "",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_250m\\2021_S2.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_250m\\2021_S2_250m.tif"
+    },
+    {
+      "dataset": "ndvi_modis",
+      "year": 2021,
+      "season_token": "S3",
+      "season": "JJA",
+      "res_m": 250,
+      "unit": "",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_250m\\2021_S3.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_250m\\2021_S3_250m.tif"
+    },
+    {
+      "dataset": "ndvi_modis",
+      "year": 2021,
+      "season_token": "S4",
+      "season": "SON",
+      "res_m": 250,
+      "unit": "",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_250m\\2021_S4.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_250m\\2021_S4_250m.tif"
+    },
+    {
+      "dataset": "ndvi_modis",
+      "year": 2022,
+      "season_token": "S1",
+      "season": "DJF",
+      "res_m": 250,
+      "unit": "",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_250m\\2022_S1.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_250m\\2022_S1_250m.tif"
+    },
+    {
+      "dataset": "ndvi_modis",
+      "year": 2022,
+      "season_token": "S2",
+      "season": "MAM",
+      "res_m": 250,
+      "unit": "",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_250m\\2022_S2.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_250m\\2022_S2_250m.tif"
+    },
+    {
+      "dataset": "ndvi_modis",
+      "year": 2022,
+      "season_token": "S3",
+      "season": "JJA",
+      "res_m": 250,
+      "unit": "",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_250m\\2022_S3.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_250m\\2022_S3_250m.tif"
+    },
+    {
+      "dataset": "ndvi_modis",
+      "year": 2022,
+      "season_token": "S4",
+      "season": "SON",
+      "res_m": 250,
+      "unit": "",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_250m\\2022_S4.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_250m\\2022_S4_250m.tif"
+    },
+    {
+      "dataset": "ndvi_modis",
+      "year": 2023,
+      "season_token": "S1",
+      "season": "DJF",
+      "res_m": 250,
+      "unit": "",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_250m\\2023_S1.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_250m\\2023_S1_250m.tif"
+    },
+    {
+      "dataset": "ndvi_modis",
+      "year": 2023,
+      "season_token": "S2",
+      "season": "MAM",
+      "res_m": 250,
+      "unit": "",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_250m\\2023_S2.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_250m\\2023_S2_250m.tif"
+    },
+    {
+      "dataset": "ndvi_modis",
+      "year": 2023,
+      "season_token": "S3",
+      "season": "JJA",
+      "res_m": 250,
+      "unit": "",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_250m\\2023_S3.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_250m\\2023_S3_250m.tif"
+    },
+    {
+      "dataset": "ndvi_modis",
+      "year": 2023,
+      "season_token": "S4",
+      "season": "SON",
+      "res_m": 250,
+      "unit": "",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_250m\\2023_S4.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_250m\\2023_S4_250m.tif"
+    },
+    {
+      "dataset": "ndvi_modis",
+      "year": 2024,
+      "season_token": "S1",
+      "season": "DJF",
+      "res_m": 250,
+      "unit": "",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_250m\\2024_S1.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_250m\\2024_S1_250m.tif"
+    },
+    {
+      "dataset": "ndvi_modis",
+      "year": 2024,
+      "season_token": "S2",
+      "season": "MAM",
+      "res_m": 250,
+      "unit": "",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_250m\\2024_S2.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_250m\\2024_S2_250m.tif"
+    },
+    {
+      "dataset": "ndvi_modis",
+      "year": 2024,
+      "season_token": "S3",
+      "season": "JJA",
+      "res_m": 250,
+      "unit": "",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_250m\\2024_S3.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_250m\\2024_S3_250m.tif"
+    },
+    {
+      "dataset": "ndvi_modis",
+      "year": 2024,
+      "season_token": "S4",
+      "season": "SON",
+      "res_m": 250,
+      "unit": "",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_250m\\2024_S4.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_250m\\2024_S4_250m.tif"
+    },
+    {
+      "dataset": "ndvi_modis",
+      "year": 2015,
+      "season_token": "S1",
+      "season": "DJF",
+      "res_m": 25,
+      "unit": "",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_25m\\2015_S1.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_25m\\2015_S1_25m.tif"
+    },
+    {
+      "dataset": "ndvi_modis",
+      "year": 2015,
+      "season_token": "S2",
+      "season": "MAM",
+      "res_m": 25,
+      "unit": "",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_25m\\2015_S2.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_25m\\2015_S2_25m.tif"
+    },
+    {
+      "dataset": "ndvi_modis",
+      "year": 2015,
+      "season_token": "S3",
+      "season": "JJA",
+      "res_m": 25,
+      "unit": "",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_25m\\2015_S3.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_25m\\2015_S3_25m.tif"
+    },
+    {
+      "dataset": "ndvi_modis",
+      "year": 2015,
+      "season_token": "S4",
+      "season": "SON",
+      "res_m": 25,
+      "unit": "",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_25m\\2015_S4.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_25m\\2015_S4_25m.tif"
+    },
+    {
+      "dataset": "ndvi_modis",
+      "year": 2016,
+      "season_token": "S1",
+      "season": "DJF",
+      "res_m": 25,
+      "unit": "",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_25m\\2016_S1.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_25m\\2016_S1_25m.tif"
+    },
+    {
+      "dataset": "ndvi_modis",
+      "year": 2016,
+      "season_token": "S2",
+      "season": "MAM",
+      "res_m": 25,
+      "unit": "",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_25m\\2016_S2.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_25m\\2016_S2_25m.tif"
+    },
+    {
+      "dataset": "ndvi_modis",
+      "year": 2016,
+      "season_token": "S3",
+      "season": "JJA",
+      "res_m": 25,
+      "unit": "",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_25m\\2016_S3.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_25m\\2016_S3_25m.tif"
+    },
+    {
+      "dataset": "ndvi_modis",
+      "year": 2016,
+      "season_token": "S4",
+      "season": "SON",
+      "res_m": 25,
+      "unit": "",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_25m\\2016_S4.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_25m\\2016_S4_25m.tif"
+    },
+    {
+      "dataset": "ndvi_modis",
+      "year": 2017,
+      "season_token": "S1",
+      "season": "DJF",
+      "res_m": 25,
+      "unit": "",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_25m\\2017_S1.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_25m\\2017_S1_25m.tif"
+    },
+    {
+      "dataset": "ndvi_modis",
+      "year": 2017,
+      "season_token": "S2",
+      "season": "MAM",
+      "res_m": 25,
+      "unit": "",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_25m\\2017_S2.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_25m\\2017_S2_25m.tif"
+    },
+    {
+      "dataset": "ndvi_modis",
+      "year": 2017,
+      "season_token": "S3",
+      "season": "JJA",
+      "res_m": 25,
+      "unit": "",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_25m\\2017_S3.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_25m\\2017_S3_25m.tif"
+    },
+    {
+      "dataset": "ndvi_modis",
+      "year": 2017,
+      "season_token": "S4",
+      "season": "SON",
+      "res_m": 25,
+      "unit": "",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_25m\\2017_S4.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_25m\\2017_S4_25m.tif"
+    },
+    {
+      "dataset": "ndvi_modis",
+      "year": 2018,
+      "season_token": "S1",
+      "season": "DJF",
+      "res_m": 25,
+      "unit": "",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_25m\\2018_S1.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_25m\\2018_S1_25m.tif"
+    },
+    {
+      "dataset": "ndvi_modis",
+      "year": 2018,
+      "season_token": "S2",
+      "season": "MAM",
+      "res_m": 25,
+      "unit": "",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_25m\\2018_S2.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_25m\\2018_S2_25m.tif"
+    },
+    {
+      "dataset": "ndvi_modis",
+      "year": 2018,
+      "season_token": "S3",
+      "season": "JJA",
+      "res_m": 25,
+      "unit": "",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_25m\\2018_S3.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_25m\\2018_S3_25m.tif"
+    },
+    {
+      "dataset": "ndvi_modis",
+      "year": 2018,
+      "season_token": "S4",
+      "season": "SON",
+      "res_m": 25,
+      "unit": "",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_25m\\2018_S4.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_25m\\2018_S4_25m.tif"
+    },
+    {
+      "dataset": "ndvi_modis",
+      "year": 2019,
+      "season_token": "S1",
+      "season": "DJF",
+      "res_m": 25,
+      "unit": "",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_25m\\2019_S1.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_25m\\2019_S1_25m.tif"
+    },
+    {
+      "dataset": "ndvi_modis",
+      "year": 2019,
+      "season_token": "S2",
+      "season": "MAM",
+      "res_m": 25,
+      "unit": "",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_25m\\2019_S2.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_25m\\2019_S2_25m.tif"
+    },
+    {
+      "dataset": "ndvi_modis",
+      "year": 2019,
+      "season_token": "S3",
+      "season": "JJA",
+      "res_m": 25,
+      "unit": "",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_25m\\2019_S3.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_25m\\2019_S3_25m.tif"
+    },
+    {
+      "dataset": "ndvi_modis",
+      "year": 2019,
+      "season_token": "S4",
+      "season": "SON",
+      "res_m": 25,
+      "unit": "",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_25m\\2019_S4.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_25m\\2019_S4_25m.tif"
+    },
+    {
+      "dataset": "ndvi_modis",
+      "year": 2020,
+      "season_token": "S1",
+      "season": "DJF",
+      "res_m": 25,
+      "unit": "",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_25m\\2020_S1.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_25m\\2020_S1_25m.tif"
+    },
+    {
+      "dataset": "ndvi_modis",
+      "year": 2020,
+      "season_token": "S2",
+      "season": "MAM",
+      "res_m": 25,
+      "unit": "",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_25m\\2020_S2.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_25m\\2020_S2_25m.tif"
+    },
+    {
+      "dataset": "ndvi_modis",
+      "year": 2020,
+      "season_token": "S3",
+      "season": "JJA",
+      "res_m": 25,
+      "unit": "",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_25m\\2020_S3.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_25m\\2020_S3_25m.tif"
+    },
+    {
+      "dataset": "ndvi_modis",
+      "year": 2020,
+      "season_token": "S4",
+      "season": "SON",
+      "res_m": 25,
+      "unit": "",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_25m\\2020_S4.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_25m\\2020_S4_25m.tif"
+    },
+    {
+      "dataset": "ndvi_modis",
+      "year": 2021,
+      "season_token": "S1",
+      "season": "DJF",
+      "res_m": 25,
+      "unit": "",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_25m\\2021_S1.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_25m\\2021_S1_25m.tif"
+    },
+    {
+      "dataset": "ndvi_modis",
+      "year": 2021,
+      "season_token": "S2",
+      "season": "MAM",
+      "res_m": 25,
+      "unit": "",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_25m\\2021_S2.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_25m\\2021_S2_25m.tif"
+    },
+    {
+      "dataset": "ndvi_modis",
+      "year": 2021,
+      "season_token": "S3",
+      "season": "JJA",
+      "res_m": 25,
+      "unit": "",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_25m\\2021_S3.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_25m\\2021_S3_25m.tif"
+    },
+    {
+      "dataset": "ndvi_modis",
+      "year": 2021,
+      "season_token": "S4",
+      "season": "SON",
+      "res_m": 25,
+      "unit": "",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_25m\\2021_S4.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_25m\\2021_S4_25m.tif"
+    },
+    {
+      "dataset": "ndvi_modis",
+      "year": 2022,
+      "season_token": "S1",
+      "season": "DJF",
+      "res_m": 25,
+      "unit": "",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_25m\\2022_S1.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_25m\\2022_S1_25m.tif"
+    },
+    {
+      "dataset": "ndvi_modis",
+      "year": 2022,
+      "season_token": "S2",
+      "season": "MAM",
+      "res_m": 25,
+      "unit": "",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_25m\\2022_S2.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_25m\\2022_S2_25m.tif"
+    },
+    {
+      "dataset": "ndvi_modis",
+      "year": 2022,
+      "season_token": "S3",
+      "season": "JJA",
+      "res_m": 25,
+      "unit": "",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_25m\\2022_S3.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_25m\\2022_S3_25m.tif"
+    },
+    {
+      "dataset": "ndvi_modis",
+      "year": 2022,
+      "season_token": "S4",
+      "season": "SON",
+      "res_m": 25,
+      "unit": "",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_25m\\2022_S4.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_25m\\2022_S4_25m.tif"
+    },
+    {
+      "dataset": "ndvi_modis",
+      "year": 2023,
+      "season_token": "S1",
+      "season": "DJF",
+      "res_m": 25,
+      "unit": "",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_25m\\2023_S1.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_25m\\2023_S1_25m.tif"
+    },
+    {
+      "dataset": "ndvi_modis",
+      "year": 2023,
+      "season_token": "S2",
+      "season": "MAM",
+      "res_m": 25,
+      "unit": "",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_25m\\2023_S2.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_25m\\2023_S2_25m.tif"
+    },
+    {
+      "dataset": "ndvi_modis",
+      "year": 2023,
+      "season_token": "S3",
+      "season": "JJA",
+      "res_m": 25,
+      "unit": "",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_25m\\2023_S3.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_25m\\2023_S3_25m.tif"
+    },
+    {
+      "dataset": "ndvi_modis",
+      "year": 2023,
+      "season_token": "S4",
+      "season": "SON",
+      "res_m": 25,
+      "unit": "",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_25m\\2023_S4.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_25m\\2023_S4_25m.tif"
+    },
+    {
+      "dataset": "ndvi_modis",
+      "year": 2024,
+      "season_token": "S1",
+      "season": "DJF",
+      "res_m": 25,
+      "unit": "",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_25m\\2024_S1.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_25m\\2024_S1_25m.tif"
+    },
+    {
+      "dataset": "ndvi_modis",
+      "year": 2024,
+      "season_token": "S2",
+      "season": "MAM",
+      "res_m": 25,
+      "unit": "",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_25m\\2024_S2.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_25m\\2024_S2_25m.tif"
+    },
+    {
+      "dataset": "ndvi_modis",
+      "year": 2024,
+      "season_token": "S3",
+      "season": "JJA",
+      "res_m": 25,
+      "unit": "",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_25m\\2024_S3.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_25m\\2024_S3_25m.tif"
+    },
+    {
+      "dataset": "ndvi_modis",
+      "year": 2024,
+      "season_token": "S4",
+      "season": "SON",
+      "res_m": 25,
+      "unit": "",
+      "png": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_25m\\2024_S4.png",
+      "cog": "data\\CA_SanJoaquin_West\\seasonal_utm\\ndvi_modis\\res_25m\\2024_S4_25m.tif"
+    }
+  ]
+}
