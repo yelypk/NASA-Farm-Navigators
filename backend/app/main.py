@@ -63,28 +63,25 @@ def game_raster(gid: str, layer: str = "ndvi"):
     return Response(content=png, media_type="image/png")
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
-STATIC_DIR = Path(__file__).resolve().parent / "static"
-DIST_DIR   = REPO_ROOT / "frontend" / "dist"
+STATIC_DIR = Path(__file__).resolve().parent / "static"   # прод: сюда копируем dist
+DIST_DIR   = REPO_ROOT / "frontend" / "dist"              # локалка: vite build
 
 FRONTEND_DIR = next((p for p in (STATIC_DIR, DIST_DIR) if (p / "index.html").exists()), None)
 
 if FRONTEND_DIR:
-    if (FRONTEND_DIR / "assets").exists():
-        app.mount("/assets", StaticFiles(directory=FRONTEND_DIR / "assets"), name="assets")
-
-    @app.get("/", include_in_schema=False)
-    async def index():
-        return FileResponse(FRONTEND_DIR / "index.html")
-
-    @app.get("/{path:path}", include_in_schema=False)
-    async def spa(_path: str):
-        return FileResponse(FRONTEND_DIR / "index.html")
+    # ВАЖНО: монтируем весь dist на корень -> файлы типа /legend_ndvi.png и /assets/* отдаются корректно
+    app.mount("/", StaticFiles(directory=FRONTEND_DIR, html=True), name="spa")
 else:
-    logging.getLogger("app.main").warning("No frontend build found at %s or %s", STATIC_DIR, DIST_DIR)
+    logging.getLogger("app.main").warning(
+        "No frontend build found at %s or %s", STATIC_DIR, DIST_DIR
+    )
 
+# оставляем хелс/диагностику
 _dbg = APIRouter()
+
 @_dbg.get("/healthz", include_in_schema=False)
 def healthz(): return {"status": "ok"}
+
 @_dbg.get("/__debug_frontend", include_in_schema=False)
 def dbg():
     return {
@@ -93,4 +90,6 @@ def dbg():
         "static_dir": str(STATIC_DIR),
         "dist_dir":   str(DIST_DIR)
     }
+
 app.include_router(_dbg)
+# ========= /SPA serving =========
